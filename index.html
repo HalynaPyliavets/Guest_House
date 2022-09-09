@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My sixth site"> 
+  <meta http-equiv="refresh" content="30"> 
+  <meta name="keywords" content="home work, site layout">
+  <meta name="robots" content="index, follow"> 
+  <meta name="autor" content="Halyna Pyliavets"> 
+  <title>HTML - site layout</title>
+
+  <link rel="stylesheet" href="./style/custom.css"> <!--Пов'язані стилі - спосіб підключення цих стилів-->
+
+  <!--Через тег style прям тут - у хедері. Глобальні стилі (критикал стилі) - 
+      При використанні глобальних стилів властивості CSS описуються в самому документі 
+      та розміщуються в заголовку веб-сторінки, коли відкривається головна сторінка - 
+      щоб на ній вже були стилі, поки інша частина ще грузиться--> 
+  
+</head>
+
+<body> 
+  <!--HEADER-->
+  <header>
+    <!--Зробити темно-сіро-коричевий фон хеадера з допомогою CSS-->
+      
+    <div> 
+    <!--Згідно макету фон на всю ширину, а лого, гавігація та кнопка в своєму контейнері, тому зарнула в div-->
+      <a href="#">
+        <img src="./images/logo-small-for-header.png" alt="logo-small-for-header">
+        <!--Лого білого кольору-->
+      </a>
+            
+      <!--Nav-->
+      <nav>
+        <ul>
+          <li><a href="./index.html" title="Go to Start">Start</a></li>
+          <li><a href="./pages/contact.html" title="Go to Contact">Contact</a></li>
+          <li><a href="./pages/our-history.html" title="Go to Our history">Our history</a></li>
+        </ul>
+      </nav>
+      
+      <button title="Go to Book now">
+        Book now
+      </button>
+    </div>
+    
+  </header>
+
+  <!--MAIN-->
+  <main>
+    <section> <!--Main-page-p.1-->
+      <div> <!--img-->
+        <img src="./images/Main.png" alt="Main"> <!--Це основна картинка, розмістити написи на картинці через стилі-->
+        <a href="#">
+          <!--Logo-big-->
+          <img src="./images/logo-big-for-main.png" alt="logo-big-for-main">
+          <!--Лого білого кольору-->
+        </a>
+        
+        <h2 class="primary-title">Experience the perfect combination of modern housing & natural scenery.</h2>
+        <p>Located in Lofoten, norway</p> <!--тут необхідно стилізувати текст через CAPSLock--> 
+
+        <!--тут має бути якась дивна кнопочка, її напевно через стилі необхідно виготовити-->
+      </div>
+
+      <div> <!--text-->
+        <!--Зробити сірий фон з допомогою CSS--> 
+        <div> <!--Фон на всю ширину та весь контейнер, а сам текст - ні, тому загорнула в div-->
+          <img src="./images/Line.png" alt="Line"> <!--Зробила лінію картинкою (поки так)-->
+
+          <div>
+            <p>
+            The Guest House is the perfect weekend get-away housing. 
+            Located in the Norwegian archipelago, Lofoten, it's a great
+            escape from the hustle and bustle of the city. Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. 
+            Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus
+            congue et, vulputate ut ligula.
+            </p>
+          </div>
+
+          <div>
+            <p>
+            Below you'll find information about the accommodation and what's included in the price. 
+            Don't hesitate to reach out to us vi the contact page if you have any questions around your stay.
+            </p>
+          </div>
+
+          <div> <!--зробила через контейнер, щоб розмістити правильно в майбутньому через стилі-->
+            <button title="Go to Book now">
+              Book now
+            </button>
+          </div>
+
+        </div>
+      </div>    
+    </section>
+
+    <section> <!--Main-page-p.2-title-->
+      <div> <!--text-->
+      <!--Зробити білий фон з допомогою CSS-->
+        <div> <!--Фон на всю ширину та весь контейнер, а сам текст - ні, тому зарнула в div-->
+          <img src="./images/Line.png" alt="Line"> <!--Зробила лінію картинкою (поки так)-->
+          <div>
+            <h1>
+              The Guest House is the perfect weekend getaway cabin.
+            </h1>
+          </div> 
+        </div>            
+      </div>
+
+      <div> <!--img-->
+        <img src="./images/Main-2.png" alt="Main-2">
+      </div>
+    </section>
+
+    <section> <!--Main-page-p.3-sleeping arrangements--> 
+      <div> <!--Зробити сірий фон з допомогою CSS--> 
+        <div> <!--Фон на всю ширину та весь контейнер, а сам текст - ні, тому зарнула в div-->
+          <img src="./images/Line.png" alt="Line">
+          <h3>Sleeping arrangements.</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus
+            feugiat eros quis consectetur.
+          </p>
+          
+          <!--1-->
+          <article>
+            <img src="./images/beds.png" alt="beds">
+            <h4>Beds</h4>
+            <p>
+              The cabin is equipped with 12 beds, 4 of which are in bunk.
+              The rent includes linens for all beds.
+            </p>
+          </article>
+          
+          <!--2-->
+          <article>
+            <img src="./images/bedrooms.png" alt="bedrooms">
+            <h4>Bedrooms</h4>
+            <p>
+              Spread out over two floors, the cabin offers 4 bedrooms.
+              Ranging from 2 to 4 beds per room.
+            </p>
+          </article>
+          
+          <!--3-->
+          <article>
+            <img src="./images/bathrooms.png" alt="bedrooms">
+            <h4>Bathrooms</h4>
+            <p>
+              The cabin has three bathrooms, all equipped with showers and one with a bath tub.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section> <!--Main-page-p.4-perfect escape.-->
+      <div>
+        <!--Зробити сірий фон з допомогою CSS-->
+        <div>
+          <!--Фон на всю ширину та весь контейнер, а сам текст - ні, тому зарнула в div-->
+          <img src="./images/Line.png" alt="Line">
+          <h3>The perfect escape.</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus
+            feugiat eros quis consectetur.
+          </p>
+    
+          <!--1-->
+          <article>
+            <img src="./images/Kitchen.png" alt="Kitchen">
+            <h4>Modern Kitchen Appliances.</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </article>
+    
+          <!--2-->
+          <article>
+            <img src="./images/Paths.png" alt="Paths">
+            <h4>Outdoor Paths</h4>
+            <p>
+              Nulla rhoncus feugiat eros quis consectetur.
+            </p>
+          </article>
+    
+          <!--3-->
+          <article>
+            <img src="./images/Coffee-Maker.png" alt="Coffee-Maker">
+            <h4>Coffee Maker</h4>
+            <p>
+              Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices,
+              ut faucibus orci tincidunt.
+            </p>
+          </article>
+
+          <!--4-->
+          <article>
+            <img src="./images/Natural-Scenery.png" alt="Natural-Scenery">
+            <h4>Natural Scenery</h4>
+            <p>
+              Cras commodo consequat orci, in convallis risus egestas non.
+            </p>
+          </article>
+
+          <!--5-->
+          <article>
+            <img src="./images/Air-Conditioner.png" alt="Air-Conditioner">
+            <h4>Air Conditioner.</h4>
+            <p>
+              Nullam scelerisque aliquam odio et faucibus.
+            </p>
+          </article>
+          
+          <!--6-->
+          <article>
+            <img src="./images/Storage-Solutions.png" alt="Storage-Solutions">
+            <h4>Storage Solutions</h4>
+            <p>
+              Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.
+            </p>
+          </article>
+          
+          <!--7-->
+          <article>
+            <img src="./images/Cutlery-Selection.png" alt="Cutlery-Selection">
+            <h4>Cutlery Selection</h4>
+            <p>
+              Duis tristique sed lorem a vestibulum.
+            </p>
+          </article>
+          
+          <!--8-->
+          <article>
+            <img src="./images/Take-away-Options.png" alt="Take-away-Options">
+            <h4>Take-away Options</h4>
+            <p>
+              Nulla efficitur auctor hendrerit. Etiam ut orci varius, 
+              faucibus libero ac, cursus quam.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section> <!--Main-page-p.5-review-->
+      <div> <!--Зробити сірий фон з допомогою CSS-->
+        </div> <!--Фон на всю ширину та весь контейнер, а сам текст - ні, тому загорнула в div-->
+        <img src="./images/Line.png" alt="Line">
+
+        <h3>Past guests.</h3>
+        <p>Don't take our word for it! Have a look at what our previous guests say 
+        about their stay at the Guest House.</p>
+      
+        <!--ВАЖЛИВО - в процесі стилізації звернути увагу, що сам відгук в білому котейнері, а блок сірий-->
+        <!--review 1--> 
+        <article>
+          <p>&#9733; &#9733; &#9733; &#9733;</p> <!--Приміила спец.символи, щоб спробувати-->
+          <h4>We had an amazing stay at the Guest House!</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Suspendisse varius enim in eros elementum tristique.
+            Duis cursus, mi quis viverra ornare, eros dolor interdum nulla,
+            ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
+            Nunc ut sem vitae risus tristique posuere.
+          </p>
+          <span>[</span> Nate Davidsson
+        </article>
+      
+        <!--review 2-->
+        <article>
+          <img src="../images/star-yes.png" alt="star-yes"> <!--Тут примінила картинки зірочок з макету-->
+          <img src="../images/star-yes.png" alt="star-yes">
+          <img src="../images/star-yes.png" alt="star-yes">
+          <img src="../images/star-yes.png" alt="star-yes">
+          <img src="../images/star-no.png" alt="star-no">
+          <h4>Beautiful little hideaway.</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Suspendisse varius enim in eros elementum tristique.
+            Duis cursus, mi quis viverra ornare, eros dolor interdum nulla,
+            ut commodo diam libero vitae erat.
+            Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
+          </p>
+          <span>[</span> Laura Paulie
+        </article>
+      
+        <!--review 3-->
+        <article>
+          <img src="../images/star-yes.png" alt="star-yes"> <!--Тут примінила картинки зірочок з макету-->
+          <img src="../images/star-yes.png" alt="star-yes">
+          <img src="../images/star-yes.png" alt="star-yes">
+          <img src="../images/star-yes.png" alt="star-yes">
+          <img src="../images/star-yes.png" alt="star-yes">
+          <h4>Best vacation ever!</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Suspendisse varius enim in eros elementum tristique.
+          </p>
+          <span>[</span> Greg Todd
+        </article>
+    </section>
+
+    <section> <!--Тут має бути блок Come together, ще в роботі-->
+      <div> 
+        <h3>??????????</h3>
+      </div>
+    </section>
+
+    <section> <!--Тут має бути блок Резервувати, ще в роботі-->
+      <div>
+        <h3>??????????</h3>
+      </div>
+    </section>
+
+  </main>
+
+  <!--FOOTER-->
+  <footer>
+    <!--Також ще в роботі-->
+  </footer>
+  
+</body>
+</html>
