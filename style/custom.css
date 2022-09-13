@@ -1,14 +1,434 @@
-h2 {
-    color: red;
+html, 
+body {
+  height: 100%;  /*--уточнити в процесі роботи по стилізації параметри--*/
+  font-family: 'Montserrat', sans-serif;
 }
 
-.primary-title {
-    color: blue;
+/*-----------------------------HEADER---------------------------------------*/ 
+header {
+  background: #52503B;
+  height: 80px;
+  width: 1440px;
+  margin-left: 0px;
+  margin-top: 0px;
+  border-radius: 0px;
 }
 
-.footer {
-    width: 100%;
-    height: auto;
-    background: #52503B;
-    text-align: center;
+.header-content {
+  height: 60px;
+  width: 1200px;
+  border-radius: 0px;
+  margin-top: 10px;
+  margin-right: 120px;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
+
+/*-----------------------------MAIN---------------------------------------*/ 
+
+/*---------------------MAIN-p.1, НЕ стилізовано, 
+необхідно спочатку підключити картинку як фон, потім розміщати на ній контент; 
+змінити колір тексту на білий, коли підключу картинку як фон-------------------------------*/ 
+
+.main-p1-1-second-title {
+  height: 104px;
+  width: 1200px;
+  border-radius: 0px;
+  margin-top: 38px;
+  margin-right: 120px;
+  margin-bottom: 32px;
+  margin-left: 120px;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 400px;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #52503B;
+}
+
+.main-p1-1-paragraph {
+  height: 20px;
+  width: 292px;
+  border-radius: 0px;
+  margin-top: 32px;
+  margin-right: 574px;
+  margin-bottom: 268px;
+  margin-left: 574px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #52503B; 
+}
+
+.main-p1-2-container {
+  background: #FAF8F0;
+  height: 410px;
+  width: 1440px;
+  margin-left: 0px;
+  margin-top: 0px;
+  border-radius: 0px;
+}
+
+.main-p1-2-content {
+  height: 210px;
+  width: 800px;
+  margin-top: 100px;
+  margin-right: 320px;
+  margin-bottom: 100px;
+  margin-left: 320px;
+  border-radius: 0px;
+}
+
+/*розмістити в ряд і достилізувати (габарити, маржіни)*/ 
+.main-p1-2-paragraph {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333333;
+}
+
+/*---------------------MAIN-p.2-------------------------------*/
+.main-p2-1-container {
+  background: #FFFFFF;
+  height: 568px;
+  width: 1440px;
+  margin-left: 0px;
+  margin-top: 0px;
+  border-radius: 0px;
+}
+
+/*З огляду на статтю про про блочні елементи виникає питання щодо h1-h6 та p. 
+Якщо заголовки та параграфи являються блоками - то їх можна стилізувати без загортання в div та в одному стилі задавати стилі шрифту та стилі блоку? 
+Я поки так і зробила, бо остаточного розуміння з вивченого на сьогодні так і не маю*/ 
+.first-title {
+  height: 288px;
+  width: 1287px;
+  border-radius: 0px;
+  margin-top: 140px;
+  margin-right: 76px;
+  margin-bottom: 140px;
+  margin-left: 76px;
+  font-family: Montserrat;
+  font-size: 96px;
+  font-weight: 700px;
+  line-height: 96px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #52503B;
+}
+
+.main-p2-2-container {
+  height: 600px;
+  width: 1440px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  border-radius: 0px;
+}
+
+/*---------------------MAIN-p.3-------------------------------*/ 
+.main-p3-container {
+  background: #FAF8F0;
+  height: 530px;
+  width: 1440px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  border-radius: 0px;
+}
+
+.main-p3-content {
+  height: 330px;
+  width: 1200px;
+  margin-top: 100px;
+  margin-right: 120px;
+  margin-bottom: 100px;
+  margin-left: 120px;
+  border-radius: 0px;
+}
+
+.main-p3-third-title {
+  height: 36px;
+  width: 396px;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 400px;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 38px;
+  margin-right: 402px;
+  margin-bottom: 12px;
+  margin-left: 402px;
+  color: #52503B;
+}
+
+.main-p3-paragraph {
+  height: 72px;
+  width: 600px;
+  margin-top: 12px;
+  margin-right: 300px;
+  margin-bottom: 32px;
+  margin-left: 300px;
+  border-radius: 0px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 20px;
+  letter-spacing: 0em; 
+  text-align: center;
+  color: #52503B; 
+}
+
+/*Повернутись до стилізації АКРТИКЛІВ після розуміння того як розмістити контейнери в ряд, наразі задавати розміри контейнерів без правильної локації не можливо. 
+ТАКОЖ в ході роботи вирахувати чому не стикується один-до-одного р2 та р3 (попередньо - причина в макеті, детально перевірити розмріри картинки та контейнера)*/
+.main-p3-fourth-title {
+  height: 24px;
+  width: 93px;
+  border-radius: 0px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+/*---------------------MAIN-p.4-------------------------------*/ 
+.main-p4-container {
+background: #FFFFFF;
+height: 726px;
+width: 1440px;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+border-radius: 0px;
+}
+
+.main-p4-content {
+  height: 526px;
+  width: 1200px;
+  margin-top: 100px;
+  margin-right: 120px;
+  margin-bottom: 100px;
+  margin-left: 120px;
+  border-radius: 0px;
+}
+
+.main-p4-third-title {
+  height: 36px;
+  width: 328px;
+  border-radius: 0px;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 400px;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 38px;
+  margin-right: 856px;
+  margin-bottom: 12px;
+  margin-left: 16px;
+  color: #52503B;
+}
+
+.main-p4-paragraph {
+  height: 72px;
+  width: 600px;
+  border-radius: 0px;
+  margin-top: 12px;
+  margin-right: 584px;
+  margin-bottom: 32px;
+  margin-left: 16px;
+  border-radius: 0px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #52503B; 
+}
+/*Повернутись до стилізації АКРТИКЛІВ після розуміння того як розмістити контейнери в ряд, наразі задавати розміри контейнерів без правильної локації не можливо*/
+
+/*---------------------MAIN-p.5-------------------------------*/
+.main-p5-container {
+  background: #FAF8F0;
+  height: 682px;
+  width: 1440px;
+  border-radius: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.main-p5-content {
+  height: 432px;
+  width: 1200px;
+  border-radius: 0px;
+  margin-top: 100px;
+  margin-right: 120px;
+  margin-bottom: 150px;
+  margin-left: 120px;
+}
+
+.main-p5-third-title {
+  height: 36px;
+  width: 200px;
+  border-radius: 0px;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 400px;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 38px;
+  margin-right: 500px;
+  margin-bottom: 12px;
+  margin-left: 500px;
+  color: #52503B;
+}
+
+.main-p5-paragraph {
+  height: 48px;
+  width: 600px;
+  border-radius: 0px;
+  margin-top: 12px;
+  margin-right: 300px;
+  margin-bottom: 32px;
+  margin-left: 300px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #52503B; 
+}
+/*Повернутись до стилізації АКРТИКЛІВ після розуміння того як розмістити контейнери в ряд, наразі задавати розміри контейнерів без правильної локації не можливо*/
+
+/*---------------------MAIN-p.6-------------------------------*/
+.main-p6-1-container {
+  height: 600px;
+  width: 1440px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  border-radius: 0px;
+}
+
+.main-p6-2-container {
+  background:#FFFFFF;
+  height: 366px;
+  width: 1440px;
+  border-radius: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.main-p6-2-content {
+  height: 166px;
+  width: 1168px;
+  border-radius: 0px;
+  margin-top: 100px;
+  margin-right: 136px;
+  margin-bottom: 100px;
+  margin-left: 136px;
+}
+
+.main-p6-2-third-title {
+  height: 36px;
+  width: 258px;
+  border-radius: 0px;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 400px;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 38px;
+  margin-right: 358px;
+  margin-bottom: 12px;
+  margin-left: 0px;
+  color: #52503B;
+}
+
+.main-p6-2-paragraph {
+  height: 48px;
+  width: 514px;
+  border-radius: 0px;
+  margin-top: 12px;
+  margin-right: 64px;
+  margin-bottom: 32px;
+  margin-left: 0px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #52503B; 
+}
+/*Повернутись до стилізації АКРТИКЛІВ після розуміння того як розмістити контейнери в ряд, наразі задавати розміри контейнерів без правильної локації не можливо*/
+
+/*---------------------MAIN-p.7-------------------------------*/
+.main-p7-container {
+  background: #FAF8F0;
+  height: 478px;
+  width: 1440px;
+  border-radius: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.main-p7-third-title {
+  height: 108px;
+  width: 532px;
+  border-radius: 0px;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 400px;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 138px;
+  margin-right: 454px;
+  margin-bottom: 12px;
+  margin-left: 454px;
+  color: #52503B;
+}
+
+.main-p7-paragraph {
+  height: 48px;
+  width: 600px;
+  border-radius: 0px;
+  margin-top: 12px;
+  margin-right: 420px;
+  margin-bottom: 20px;
+  margin-left: 420px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #52503B; 
+}
+/*Повернутись до стилізації кнопок/
+
+/*---------------------FOOTER - не стилізовано-------------------------------*/
