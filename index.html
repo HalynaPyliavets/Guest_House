@@ -6,413 +6,531 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="The Guest House, Norwegian archipelago, Lofoten"> 
-  <meta http-equiv="refresh" content="30"> 
   <meta name="keywords" content="The Guest House, Norwegian archipelago, Lofoten"> 
-  <meta name="robots" content="index, follow"> 
   <meta name="autor" content="Halyna Pyliavets"> 
   <title>The Guest House - the perfect combination of modern housing&natural scenery</title>
 
-  <link rel="stylesheet" href="./style/reset.css"> <!--зкидання всіх налаштувань браузера, завдяки цьому можна розпочати стилізацію як з чистого листа-->
+  <link rel="apple-touch-icon" sizes="76x76" href="./images/GuestHouse_favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/GuestHouse_favicon.svg">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/GuestHouse_favicon.svg">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Підключення шрифтів-->
+  <link rel="mask-icon" href="./images/GuestHouse_favicon.svg" color="#fff">
+
+  <meta name="og:url" content="./index.html"/> <!--Domain site url - потім вказати адресу сайту-->
+  <meta name="og:title" content="The Guest House"/>
+  <meta name="og:description" content="The Guest House website"/>
+  <meta name="og:type" content="article"/>
+  <meta name="og:image" content="./images/Main.png"/> <!--основна картинка сайту-->
+  <meta property="og:image:width" content="350"/>
+  <meta property="og:image:height" content="200"/>
+  <meta property="og:image:alt" content="selector"/>
+
+  <link rel="stylesheet" href="./style/reset.css"> <!--зкидання всіх налаштувань браузера, завдяки цьому можна розпочати стилізацію як з чистого листа, йде першим у списку посилань-->
+  <link rel="stylesheet" href="./style/custom.css"> <!--підключення стилів, йде другим після reset-->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!--підключення шрифтів, що є вільними в доступі в GoogleFonts-->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./style/custom.css"> <!--Пов'язані стилі - спосіб підключення цих стилів-->
-  
-  <!--Через тег style прям тут - у хедері. Глобальні стилі (критикал стилі) - 
-      При використанні глобальних стилів властивості CSS описуються в самому документі 
-      та розміщуються в заголовку веб-сторінки, коли відкривається головна сторінка - 
-      щоб на ній вже були стилі, поки інша частина ще грузиться--> 
-  
 </head>
 
 <body> 
   <!--HEADER-->
   <header>
-    <div class="header-content"> 
-    <!--Згідно макету фон на всю ширину, а лого, навігація та кнопка в своєму контейнері, тому зарнула в div-->
-      <a href="#">
-        <img src="./images/logo-small-for-header.png" alt="Guest-House-logo-small">
-        <!--Лого білого кольору-->
-      </a>
-            
-      <!--Nav-->
-      <nav>
-        <ul>
-          <li><a href="./index.html" title="Go to Start">Start</a></li>
-          <li><a href="./pages/contact.html" title="Go to Contact">Contact</a></li>
-          <li><a href="./pages/our-history.html" title="Go to Our history">Our history</a></li>
-        </ul>
-      </nav>
+    <div class="container">  <!--типовий контейнер для всіх глобальних частин сайту із шириною, центруванням...-->
+      <div class="header">
+        <div class="header-content"> <!--Згідно макету фон на всю ширину, а лого, навігація та кнопка в своєму контейнері, які мають визначені відступи, тому зарнула в div-->
+          <a href="./index.html" class="header-logo fl"> <!--Лого-header, білого кольору, "заглушка" по прикладу із лекції-->
+            <img src="./images/logo-small-for-header.svg" alt="GuestHouse">
+          </a>
+                
+          <!--Nav-->
+          <nav class="header-menu fl">
+            <ul >
+              <li><a href="./index.html" title="Go to Start">Start</a></li>
+              <li><a href="./pages/contact.html" title="Go to Contact">Contact</a></li>
+              <li><a href="./pages/our-history.html" title="Go to Our history">Our history</a></li>
+            </ul>
+          </nav>
+          
+          <button class="header-button fr" title="Go to Book now"> 
+            Book now
+          </button>
+        </div>
+      </div>
       
-      <button title="Go to Book now">
-        Book now
-      </button>
     </div>
-    
   </header>
 
   <!--MAIN-->
   <main>
-    <section> <!--Main-p.1-->
-      <div> <!--img, з.1-1, не стилізовано-->
-        <img src="./images/Main.png" alt="Main"> <!--Це основна картинка, розмістити написи на картинці через стилі-->
-        <a href="#">
-          <!--Logo-big-->
-          <img src="./images/logo-big-for-main.png" alt="Guest-House-logo-main">
-          <!--Лого білого кольору-->
-        </a>
+    <div class="container"> 
+      <section> <!--Main-p.1-->
+        <!--застилізувати р.1.1 після того, як картинка буде виконана як фон і буде можливість на картинку посадити контент, власне тоді ж уточнити блоки, відстані!!!!-->
+        <div class="main-p1"> 
+          <img src="./images/Main.png" alt="Main" class="main-p1-img"> <!--Це основна картинка, розмістити написи на картинці через стилі-->
+          <div class="main-p1-content">
+            <a href="./index.html" class="main-p1-1-logo"> <!--Logo-main, білого кольору-->
+              <img src="./images/logo-big-for-main.svg" alt="GuestHouse">
+            </a>
+            <div class="main-p1-1-title">
+              <h2 class="main-p1-1-second-title">Experience the perfect combination of modern housing & natural scenery.</h2>
+            </div>
+            
+            <div class="main-p1-1-paragraph-border">
+              <p class="main-p1-1-paragraph-text">Located in Lofoten, norway</p> <!--тут необхідно стилізувати текст через CAPSLock--> 
+            </div>
+            
+          </div>
+          <!--тут має бути декоративна кнопочка, застилізувати її коли дійдемо до вивчення необхідної теми-->
+          
+        <div class="main-p1-2-container"> <!--text, p.1-2--> 
+          <div class="main-p1-2-content"> <!--На макеті контент контейнера знаходиться в блоці, тому виникає блок div-->
+            <img src="./images/Line.png" alt="Line" class="red-line-main-p1"> <!--Зробила лінію картинкою (поки так)-->
+  
+            <div class="main-p1-2-content-p-left fl">
+              <div class="main-p1-2-paragraph-left-border">
+                <p class="main-p1-2-paragraph-text"> 
+                  The Guest House is the perfect weekend get-away housing. 
+                  Located in the Norwegian archipelago, Lofoten, it's a great
+                  escape from the hustle and bustle of the city. Lorem ipsum dolor sit amet, 
+                  consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. 
+                  Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus
+                  congue et, vulputate ut ligula.
+                </p>
+              </div>
+            </div>
+
+            <div class="main-p1-2-content-p-right fr">
+              <div class="main-p1-2-paragraph-right-border">
+                <p class="main-p1-2-paragraph-text fl"> 
+                  Below you'll find information about the accommodation and what's included in the price. 
+                  Don't hesitate to reach out to us vi the contact page if you have any questions around your stay.
+                </p>
+              </div>
+                  
+              <button class="main-p1-button fl" title="Go to Book now"> 
+                Book now
+              </button>
+            </div>
+          </div>
+        </div>  
         
-        <h2 class="main-p1-1-second-title">Experience the perfect combination of modern housing & natural scenery.</h2>
-        <p class="main-p1-1-paragraph">Located in Lofoten, norway</p> <!--тут необхідно стилізувати текст через CAPSLock--> 
-
-        <!--тут має бути якась дивна кнопочка, її напевно через стилі необхідно виготовити-->
-      </div>
-
-      <div class="main-p1-2-container"> <!--text, p.1-2, не стилізовано--> 
-        <div class="main-p1-2-content"> <!--На макеті контент контейнера знаходиться в блоці, тому виникає блок div-->
-          <img src="./images/Line.png" alt="Line"> <!--Зробила лінію картинкою (поки так)-->
-
-          <p class="main-p1-2-paragraph"> <!--розмістити в ряд і достилізувати-->
-            The Guest House is the perfect weekend get-away housing. 
-            Located in the Norwegian archipelago, Lofoten, it's a great
-            escape from the hustle and bustle of the city. Lorem ipsum dolor sit amet, 
-            consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. 
-            Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus
-            congue et, vulputate ut ligula.
-          </p>
-
-          <p class="main-p1-2-paragraph"> <!--розмістити в ряд і достилізувати-->
-            Below you'll find information about the accommodation and what's included in the price. 
-            Don't hesitate to reach out to us vi the contact page if you have any questions around your stay.
-          </p>
-
-          <button title="Go to Book now"> 
-            Book now
-          </button>
+        </div> 
+      </section>
+  
+      <section> <!--Main-p.2-title-->
+        <div class="main-p2"> <!--розділяю блоками, щоб в подальшому можна було проводити маніпуляції з конкретним блоком (можливо, виводити на 1 сторінку по 1 блоку)-->
+          <div class="main-p2-1-container"> <!--text-->
+            <img src="./images/Line.png" alt="Line" class="red-line-main-p2"> <!--Зробила лінію картинкою (поки так)-->
+            <div class="main-p2-1-title-border">
+              <h1 class="main-p2-1-first-title-text">The Guest House is the perfect weekend getaway cabin.</h1>
+            </div>
+          </div>
+          <div class="main-p2-2-container"> <!--img-->
+            <img src="./images/Main-2.png" alt="Guest-House-Main-2">
+          </div>
         </div>
-      </div>    
-    </section>
-
-    <section> <!--Main-p.2-title-->
-      <div class="main-p2-1-container"> <!--text-->
-        <img src="./images/Line.png" alt="Line"> <!--Зробила лінію картинкою (поки так)-->
-        <h1 class="first-title">The Guest House is the perfect weekend getaway cabin.</h1>
-      </div>
-      <div class="main-p2-2-container"> <!--img-->
-        <img src="./images/Main-2.png" alt="Main-2">
-      </div>
-    </section>
-
-    <section> <!--Main-p.3-sleeping arrangements--> 
-      <div class="main-p3-container"> 
-        <div class="main-p3-content"> <!--На макеті контент контейнера знаходиться в блоці, тому виникає блок div-->
-          <img src="./images/Line.png" alt="Line">
-          <h3 class="main-p3-third-title">Sleeping arrangements.</h3>
-          <p class="main-p3-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus
-            feugiat eros quis consectetur.
-          </p>
-          
-          <!--1, не стилізовано!-->
-          <article>
-            <img src="./images/beds.png" alt="beds">
-            <h4 class="main-p3-fourth-title">Beds</h4>
-            <p>
-              The cabin is equipped with 12 beds, 4 of which are in bunk.
-              The rent includes linens for all beds.
-            </p>
-          </article>
-          
-          <!--2-->
-          <article>
-            <img src="./images/bedrooms.png" alt="bedrooms">
-            <h4 class="main-p3-fourth-title">Bedrooms</h4>
-            <p>
-              Spread out over two floors, the cabin offers 4 bedrooms.
-              Ranging from 2 to 4 beds per room.
-            </p>
-          </article>
-          
-          <!--3-->
-          <article>
-            <img src="./images/bathrooms.png" alt="bedrooms">
-            <h4 class="main-p3-fourth-title">Bathrooms</h4>
-            <p>
-              The cabin has three bathrooms, all equipped with showers and one with a bath tub.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section> <!--Main-p.4-perfect escape.-->
-      <div class="main-p4-container">
-        <div class="main-p4-content"> <!--На макеті контент контейнера знаходиться в блоці, тому виникає блок div-->
-          
-          <img src="./images/Line.png" alt="Line">
-          <h3 class="main-p4-third-title">The perfect escape.</h3>
-          <p class="main-p4-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus
-            feugiat eros quis consectetur.
-          </p>
-    
-          <!--1, не стилізовано-->
-          <article>
-            <img src="./images/Kitchen.png" alt="Kitchen">
-            <h4>Modern Kitchen Appliances.</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-          </article>
-    
-          <!--2, не стилізовано-->
-          <article>
-            <img src="./images/Paths.png" alt="Paths">
-            <h4>Outdoor Paths</h4>
-            <p>
-              Nulla rhoncus feugiat eros quis consectetur.
-            </p>
-          </article>
-    
-          <!--3, не стилізовано-->
-          <article>
-            <img src="./images/Coffee-Maker.png" alt="Coffee-Maker">
-            <h4>Coffee Maker</h4>
-            <p>
-              Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices,
-              ut faucibus orci tincidunt.
-            </p>
-          </article>
-
-          <!--4, не стилізовано-->
-          <article>
-            <img src="./images/Natural-Scenery.png" alt="Natural-Scenery">
-            <h4>Natural Scenery</h4>
-            <p>
-              Cras commodo consequat orci, in convallis risus egestas non.
-            </p>
-          </article>
-
-          <!--5, не стилізовано-->
-          <article>
-            <img src="./images/Air-Conditioner.png" alt="Air-Conditioner">
-            <h4>Air Conditioner.</h4>
-            <p>
-              Nullam scelerisque aliquam odio et faucibus.
-            </p>
-          </article>
-          
-          <!--6, не стилізовано-->
-          <article>
-            <img src="./images/Storage-Solutions.png" alt="Storage-Solutions">
-            <h4>Storage Solutions</h4>
-            <p>
-              Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.
-            </p>
-          </article>
-          
-          <!--7, не стилізовано-->
-          <article>
-            <img src="./images/Cutlery-Selection.png" alt="Cutlery-Selection">
-            <h4>Cutlery Selection</h4>
-            <p>
-              Duis tristique sed lorem a vestibulum.
-            </p>
-          </article>
-          
-          <!--8, не стилізовано-->
-          <article>
-            <img src="./images/Take-away-Options.png" alt="Take-away-Options">
-            <h4>Take-away Options</h4>
-            <p>
-              Nulla efficitur auctor hendrerit. Etiam ut orci varius, 
-              faucibus libero ac, cursus quam.
-            </p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <section> <!--Main-p.5-review-->
-      <div class="main-p5-container"> 
-        <div class="main-p5-content"> <!--На макеті контент контейнера знаходиться в блоці, тому виникає блок div-->
-          <img src="./images/Line.png" alt="Line">
-
-          <h3 class="main-p5-third-title">Past guests.</h3>
-          <p class="main-p5-paragraph">
-            Don't take our word for it! Have a look at what our previous guests say about their stay at the Guest House.
-          </p>
-      
-          <!--ВАЖЛИВО - в процесі стилізації звернути увагу, що сам відгук в білому котейнері, а блок сірий-->
-          <!--review 1, не стилізовано--> 
-          <article>
-          <img src="./images/star-yes.png" alt="star-yes"> 
-          <img src="./images/star-yes.png" alt="star-yes">
-          <img src="./images/star-yes.png" alt="star-yes">
-          <img src="./images/star-yes.png" alt="star-yes">
-          <img src="./images/star-yes.png" alt="star-yes">
-          <h4>We had an amazing stay at the Guest House!</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Suspendisse varius enim in eros elementum tristique.
-            Duis cursus, mi quis viverra ornare, eros dolor interdum nulla,
-            ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
-            Nunc ut sem vitae risus tristique posuere.
-          </p>
-          <p>Nate Davidsson</p> 
-          </article>
-      
-          <!--review 2, не стилізовано-->
-          <article>
-          <img src="./images/star-yes.png" alt="star-yes"> 
-          <img src="./images/star-yes.png" alt="star-yes">
-          <img src="./images/star-yes.png" alt="star-yes">
-          <img src="./images/star-yes.png" alt="star-yes">
-          <img src="./images/star-no.png" alt="star-no">
-          <h4>Beautiful little hideaway.</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Suspendisse varius enim in eros elementum tristique.
-            Duis cursus, mi quis viverra ornare, eros dolor interdum nulla,
-            ut commodo diam libero vitae erat.
-            Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
-          </p>
-          <p>Laura Paulie</p>
-          
-          </article>
-      
-          <!--review 3, не стилізовано-->
-          <article>
-          <img src="./images/star-yes.png" alt="star-yes"> 
-          <img src="./images/star-yes.png" alt="star-yes">
-          <img src="./images/star-yes.png" alt="star-yes">
-          <img src="./images/star-yes.png" alt="star-yes">
-          <img src="./images/star-yes.png" alt="star-yes">
-          <h4 class="fourth-title">Best vacation ever!</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Suspendisse varius enim in eros elementum tristique.
-          </p>
-          <p>Greg Todd</p> 
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section> <!--Main-p.6-Come together-->
-      <div class="main-p6-1-container"> <!--img-->
-        <img src="./images/img-for-come-together-ok.jpg" alt="come-together">
-      </div>
-
-      <div class="main-p6-2-container"> <!--text-->
-        <div class="main-p6-2-content"> <!--На макеті контент контейнера знаходиться в блоці, тому виникає блок div--> 
-          <img src="./images/Line.png" alt="Line">
-          <h3 class="main-p6-2-third-title">Come together.</h3>
-          <p class="main-p6-2-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus.</p>
-          
-          <article> <!--1, не стилізовано-->
-            <img src="./images/conditions-wi-fi.png" alt="wi-fi">
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-          </article>
-
-          <article> <!--2, не стилізовано-->
-            <img src="./images/conditions-saving-things.png" alt="saving-things">
-            <h4>Nulla rhoncus feugiat eros quis consectetur.</h4>
-          </article>
-
-          <article> <!--3, не стилізовано-->
-            <img src="./images/conditions-products.png" alt="conditions-products">
-            <h4>Nullam scelerisque aliquam odio et faucibus.</h4>
-          </article>
-
-          <article> <!--4, не стилізовано-->
-            <img src="./images/conditions-kitchen.png" alt="conditions-kitchen">
-            <h4>Morbi neque ex, condimentum.</h4>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section> <!--Main-p.7-booking-->
-      <div class="main-p7-container">
-        <img src="./images/Line.png" alt="Line"> 
-        <h3 class="main-p7-third-title">We're already booked up for the spring — hurry up & secure your stay for the summer.</h3>
-        <p class="main-p7-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus.</p>
-
-        <button title="Go to Contact"> <!--не стилізовано-->
-          Contact
-        </button>
-
-        <button title="Go to Book now"> <!--не стилізовано-->
-          Book now
-        </button>
         
-      </div>
-    </section>
+      </section>
+  
+      <section> <!--Main-p.3-sleeping arrangements--> 
+        <div class="main-p3"> 
+          <div class="main-p3-content"> <!--На макеті контент контейнера знаходиться в блоці, тому виникає блок div-->
+            <div class="main-p3-content-p1">
+              <img src="./images/Line.png" alt="Line" class="red-line-main-p3">
+              <div class="main-p3-title-border">
+                <h3 class="main-p3-third-title-texte">Sleeping arrangements.</h3>
+              </div>
+              <div class="main-p3-paragraph-border">
+                <p class="main-p3-paragraph-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus
+                  feugiat eros quis consectetur.
+                </p>
+              </div>
+            </div>
+            <div class="main-p3-content-p2">
+              <!--1-->
+              <article class="article-1 fl">
+                <img src="./images/beds.png" alt="beds" class="main-p3-content-p2-img1">
+                <div class="main-p3-title-border1">
+                  <h4 class="main-p3-fourth-title-text1">Beds</h4>
+                </div>
+                <div class="main-p3-2-paragraph-border1">
+                  <p class="main-p3-2-paragraph-text1">
+                    The cabin is equipped with 12 beds, 4 of which are in bunk.
+                    The rent includes linens for all beds.
+                  </p>
+                </div>
+              </article>
+              
+              <!--2-->
+              <article class="article-2 fl">
+                <img src="./images/bedrooms.png" alt="bedrooms" class="main-p3-content-p2-img2">
+                <div class="main-p3-title-border2">
+                  <h4 class="main-p3-fourth-title-text2">Bedrooms</h4>
+                </div>
+                <div class="main-p3-2-paragraph-border2">
+                  <p class="main-p3-2-paragraph-text2">
+                    Spread out over two floors, the cabin offers 4 bedrooms.
+                    Ranging from 2 to 4 beds per room.
+                  </p>
+                </div>
+              </article>
+              
+              <!--3-->
+              <article class="article-3 fl">
+                <img src="./images/bathrooms.png" alt="bedrooms" class="main-p3-content-p2-img3">
+                <div class="main-p3-title-border3">
+                  <h4 class="main-p3-fourth-title-text3">Bathrooms</h4>
+                </div>
+                <div class="main-p3-2-paragraph-border3">
+                  <p class="main-p3-2-paragraph-text3">
+                    The cabin has three bathrooms, all equipped with showers and one with a bath tub.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section> <!--Main-p.4-perfect escape.-->
+        <div class="main-p4">
+          <div class="main-p4-content"> <!--На макеті контент контейнера знаходиться в блоці, тому виникає блок div-->
+            <div class="main-p4-content-p1">
+              <img src="./images/Line.png" alt="Line" class="red-line-main-p4">
+              <div class="main-p4-title-border">
+                <h3 class="main-p4-third-title-texte">The perfect escape.</h3>
+              </div>
+              <div class="main-p4-paragraph-border">
+                <p class="main-p4-paragraph-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus
+                feugiat eros quis consectetur.
+                </p>
+              </div>
+            </div>
+      
+            <div class="main-p4-content-p2">
+              <div class="main-p4-content-p2-1 fl"> <!--ліва частина артиклів-->
+                <!--1-->
+                <article class="article-4-1">
+                  <img src="./images/Kitchen.png" alt="Kitchen" class="main-p4-content-p2-img1 fl">
+                  <div class="main-p4-title-article-border1">
+                    <h4 class="main-p4-title-article-text1 fr">
+                      Modern Kitchen Appliances.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </h4>
+                  </div>
+                </article>
+          
+                <!--2-->
+                <article class="article-4-2">
+                  <img src="./images/Paths.png" alt="Paths" class="main-p4-content-p2-img2 fl">
+                  <div class="main-p4-title-article-border2">
+                    <h4 class="main-p4-title-article-text2 fr">
+                      Outdoor Paths.
+                      Nulla rhoncus feugiat eros quis consectetur.
+                    </h4>
+                  </div>
+                </article>
+          
+                <!--3-->
+                <article class="article-4-3">
+                  <img src="./images/Coffee-Maker.png" alt="Coffee-Maker" class="main-p4-content-p2-img3 fl">
+                  <div class="main-p4-title-article-border3">
+                    <h4 class="main-p4-title-article-text3 fr">
+                      Coffee Maker
+                      Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices,
+                      ut faucibus orci tincidunt.
+                    </h4>
+                  </div>
+                </article>
+      
+                <!--4-->
+                <article class="article-4-4">
+                  <img src="./images/Natural-Scenery.png" alt="Natural-Scenery" class="main-p4-content-p2-img4 fl">
+                  <div class="main-p4-title-article-border4">
+                    <h4 class="main-p4-title-article-text4 fr">
+                      Natural Scenery
+                      Cras commodo consequat orci, in convallis risus egestas non.
+                    </h4>
+                  </div> 
+                </article>
+              </div>
 
+              <div class="main-p4-content-p2-2 fr"> <!--права частина артиклів--> 
+                <!--5-->
+                <article class="article-4-5">
+                  <img src="./images/Air-Conditioner.png" alt="Air-Conditioner" class="main-p4-content-p2-img5 fl">
+                  <div class="main-p4-title-article-border5">
+                    <h4 class="main-p4-title-article-text5 fr">
+                      Air Conditioner.
+                      Nullam scelerisque aliquam odio et faucibus.
+                    </h4>
+                  </div>
+                </article>
+                
+                <!--6-->
+                <article class="article-4-6">
+                  <img src="./images/Storage-Solutions.png" alt="Storage-Solutions" class="main-p4-content-p2-img6 fl">
+                  <div class="main-p4-title-article-border6">
+                    <h4 class="main-p4-title-article-text6 fr">
+                      Storage Solutions. 
+                      Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.
+                    </h4>
+                  </div>
+                </article>
+                
+                <!--7-->
+                <article class="article-4-7">
+                  <img src="./images/Cutlery-Selection.png" alt="Cutlery-Selection" class="main-p4-content-p2-img7 fl">
+                  <div class="main-p4-title-article-border7">
+                    <h4 class="main-p4-title-article-text7 fr">
+                      Cutlery Selection. 
+                      Duis tristique sed lorem a vestibulum.
+                    </h4>
+                  </div>
+                </article>
+                
+                <!--8-->
+                <article class="article-4-8">
+                  <img src="./images/Take-away-Options.png" alt="Take-away-Options" class="main-p4-content-p2-img8 fl">
+                  <div class="main-p4-title-article-border8">
+                    <h4 class="main-p4-title-article-text8 fr">
+                      Take-away Options.
+                      Nulla efficitur auctor hendrerit. Etiam ut orci varius, 
+                      faucibus libero ac, cursus quam.
+                    </h4>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section> <!--Main-p.5-review-->
+        <div class="main-p5"> 
+          <div class="main-p5-content">
+            <div class="main-p5-content-p1">
+              <img src="./images/Line.png" alt="Line" class="red-line-main-p5">
+              <div class="main-p5-title-border">
+                <h3 class="main-p5-third-title-texte">Past guests.</h3>
+              </div>
+              <div class="main-p5-paragraph-border">
+                <p class="main-p5-paragraph-text">
+                  Don't take our word for it! Have a look at what our previous guests say about their stay at the Guest House.
+                </p>
+              </div>
+            </div>
+  
+            <div class="main-p5-content-p2">
+              <!--review 1--> <!--після вивчення матеріалу по стилізації зірочок внести уточнення по розмірам блоків!!!!-->
+              <article class="article-5-1 fl"> 
+                <img src="./images/star-yes.png" alt="star-yes"> 
+                <img src="./images/star-yes.png" alt="star-yes">
+                <img src="./images/star-yes.png" alt="star-yes">
+                <img src="./images/star-yes.png" alt="star-yes">
+                <img src="./images/star-yes.png" alt="star-yes">
+                
+                <div class="main-p5-title-article-border1">
+                  <h4 class="main-p5-title-article-text1">
+                    We had an amazing stay at the Guest House!
+                  </h4>
+                </div>
+                <div class="main-p5-paragraph-article-border1">
+                  <p class="main-p5-paragraph-article-text1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros elementum tristique.
+                    Duis cursus, mi quis viverra ornare, eros dolor interdum nulla,
+                    ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
+                    Nunc ut sem vitae risus tristique posuere. Nate Davidsson 
+                  </p>
+                  <!--після вивчення стилів доробити ПІБ того, хто писав відгук-->
+                </div>
+              </article>
+            
+                <!--review 2--> <!--після вивчення матеріалу по стилізації зірочок внести уточнення по розмірам блоків!!!!-->
+                <article class="article-5-2 fr">
+                <img src="./images/star-yes.png" alt="star-yes"> 
+                <img src="./images/star-yes.png" alt="star-yes">
+                <img src="./images/star-yes.png" alt="star-yes">
+                <img src="./images/star-yes.png" alt="star-yes">
+                <img src="./images/star-no.png" alt="star-no">
+                
+                <div class="main-p5-title-article-border2">
+                  <h4 class="main-p5-title-article-text2">
+                    Beautiful little hideaway.
+                  </h4>
+                </div>
+                <div class="main-p5-paragraph-article-border2">
+                  <p class="main-p5-paragraph-article-text2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique.
+                  Duis cursus, mi quis viverra ornare, eros dolor interdum nulla,
+                  ut commodo diam libero vitae erat.
+                  Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
+                  Laura Paulie
+                  </p>
+                  <!--після вивчення стилів доробити ПІБ того, хто писав відгук-->
+                </div>
+                </article>
+    
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section> <!--Main-p.6-Come together-->
+        <div class="main-p6">
+          <div class="main-p6-1-container"> <!--img-->
+            <img src="./images/img-for-come-together-ok.jpg" alt="come-together">
+          </div>
+    
+          <div class="main-p6-2-container"> <!--text-->
+            <div class="main-p6-2-content"> <!--На макеті контент контейнера знаходиться в блоці, тому виникає блок div--> 
+              <div class="main-p6-2-content-text fl">
+                <img src="./images/Line.png" alt="Line" class="red-line-main-p6">
+                <div class="main-p6-title-border">
+                  <h3 class="main-p6-third-title-texte">Come together.</h3>
+                </div>
+                <div class="main-p6-paragraph-border">
+                  <p class="main-p6-paragraph-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus.
+                  </p>
+                </div>
+              </div>
+
+              <div class="main-p6-2-content-article fr">
+                <div class="article-6-left fl">
+                  <article class="article-6-1"> <!--1-->
+                    <img src="./images/conditions-wi-fi.png" alt="wi-fi" class="main-p6-content-p2-img1 fl">
+                    <div class="main-p6-title-article-border1 fr">
+                      <h4 class="main-p4-title-article-text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                    </div>
+                  </article>
+        
+                  <article class="article-6-2"> <!--2-->
+                    <img src="./images/conditions-saving-things.png" alt="saving-things" class="main-p6-content-p2-img2 fl">
+                    <div class="main-p6-title-article-border2 fr">
+                      <h4 class="main-p4-title-article-text2">Nulla rhoncus feugiat eros quis consectetur.</h4>
+                    </div>
+                  </article>  
+                </div>
+
+                <div class="article-6-right fr">
+                  <article class="article-6-3"> <!--3-->
+                    <img src="./images/conditions-products.png" alt="conditions-products" class="main-p6-content-p2-img3 fl">
+                    <div class="main-p6-title-article-border3 fr">
+                      <h4 class="main-p4-title-article-text3">Nullam scelerisque aliquam odio et faucibus.</h4>
+                    </div>
+                  </article>
+        
+                  <article class="article-6-4"> <!--4-->
+                    <img src="./images/conditions-kitchen.png" alt="conditions-kitchen" class="main-p6-content-p2-img4 fl">
+                    <div class="main-p6-title-article-border4 fr">
+                      <h4 class="main-p4-title-article-text4">Morbi neque ex, condimentum.</h4>
+                    </div>
+                  </article>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section> <!--Main-p.7-booking-->
+        <div class="main-p7">
+          <div class="main-p7-content">
+            <div class="main-p7-content-text">
+              <img src="./images/Line.png" alt="Line" class="red-line-main-p7"> 
+              <div class="main-p7-title-border">
+                <h3 class="main-p7-third-title-texte">We're already booked up for the spring — hurry up & secure your stay for the summer.</h3>
+              </div>
+              <div class="main-p7-paragraph-border">
+                <p class="main-p7-paragraph-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus.
+                </p>
+              </div>
+            </div>
+            
+            <div class="main-p7-content-button">
+              <button class="main-p7-button-contact fl" title="Go to Contact" > 
+                Contact
+              </button>
+      
+              <button class="main-p7-button-book fl" title="Go to Book now" > 
+                Book now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 
-  <!--FOOTER-->
-  <footer> <!--не стилізовано-->
-    <!--Зробити сірий фон з допомогою CSS-->
-    <div> <!--Pages-->
-        <h3>PAGES</h3> <!--примінила CapsLock, необхідно уточнити по стилям-->
-        <nav>
-          <ul>
-            <li><a href="./index.html" title="Go to Start">Start</a></li>
-            <li><a href="./pages/contact.html" title="Go to Contact">Contact</a></li>
-            <li><a href="./pages/our-history.html" title="Go to Our historyinstructions">Our history</a></li>
-            <li><a href="./pages/licenses.html" title="Go to Licenses">Licenses</a></li>
-            <li><a href="./pages/instructions.html" title="Go to instrutions">Instructions</a></li>
-            <li><a href="./pages/style-guide.html" title="Go to Style guide">Style guide</a></li>
-          </ul>
-        </nav>
-    </div>
+  <!--FOOTER, до кінця НЕ застилізовано. Коригування будуть внесені після вивчення відповідного матеріалу-->
+  <footer> 
+    <div class="container"> <!--типовий контейнер для всіх глобальних частин сайту із шириною, центруванням...-->
+      <div class="footer">
+        <div class="footer-content">
+          <div class="pages fl"> <!--Pages-->
+            <h3 class="footer-pages-title">PAGES</h3> <!--примінила CapsLock, необхідно уточнити по стилям-->
+            <nav class="footer-pages-menu fl">
+              <ul>
+                <li><a href="./index.html" title="Go to Start">Start</a></li>
+                <li><a href="./pages/contact.html" title="Go to Contact">Contact</a></li>
+                <li><a href="./pages/our-history.html" title="Go to Our historyinstructions">Our history</a></li>
+                <li><a href="./pages/licenses.html" title="Go to Licenses">Licenses</a></li>
+                <li><a href="./pages/instructions.html" title="Go to instrutions">Instructions</a></li>
+                <li><a href="./pages/style-guide.html" title="Go to Style guide">Style guide</a></li>
+              </ul>
+            </nav>
+            </div>
+        
+            <div class="social-media fl"> <!--Social Media-->
+              <h3 class="footer-social-media-title">Social Media</h3>
+              <a href="./index.html"><img src="./images/SocialMedia.png" alt="SocialMedia"></a> 
+              <a href="./index.html"><img src="./images/SocialMedia-fb.png" alt="SocialMedia-fb"></a> 
+              <a href="./index.html"><img src="./images/SocialMedia-insta.png" alt="SocialMedia-insta"></a> 
+            </div>
     
-    <div> <!--Social Media-->
-        <h3>Social Media</h3>
-        <a href="#"><img src="./images/SocialMedia.png" alt="SocialMedia"></a> <!--значок білого кольору-->
-        <a href="#"><img src="./images/SocialMedia-fb.png" alt="SocialMedia-fb"></a> <!--значок білого кольору-->
-        <a href="#"><img src="./images/SocialMedia-insta.png" alt="SocialMedia-insta"></a> <!--значок білого кольору-->
-    </div>
+            <div class="newsletter"> <!--Newsletter-->
+              <form action="https://fom.in.ua/echo" method="POST" name="Newsletter"> 
+                <h4>NEWSLETTER</h4> <!--уточнити через стилі GapsLock-->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                <div>
+                  <label>
+                    <input type="email" name="Email" placeholder="Email">
+                  </label>
+                </div>
+          
+                <div>
+                  <label>
+                    <input type="submit" value="Submit"> 
+                  </label>
+                </div>
+              </form>
+            </div>
 
-    <div> <!--Newsletter-->
-      <form action="https://fom.in.ua/echo" method="POST" name="Newsletter"> 
-        <h4>NEWSLETTER</h4> <!--уточнити через стилі GapsLock-->
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-        <div>
-          <label>
-            <input type="email" name="Email" placeholder="Email">
-          </label>
+            <div class="footer-bottom">
+              <a href="./index.html"> 
+                <img src="./images/logo-for-footer.svg" alt="GuestHouse" class="footer-logo">
+              </a>
+              <p class="footer-bottom-paragraph">&#169; Guest House, LLC. All rights reserved. Powered by Webflow</p> 
+        
+              <nav>
+                <a href="tel:+47(0)702881234">+47 (0) 702 88 12 34</a>
+                <a href="mailto:example@webflow.io">&mdash; example@webflow.io</a>
+                <span>Klubbvika 12, 8310 Kabelvag, Norway</span>
+              </nav>
+            </div>
         </div>
-      
-        <div>
-          <label>
-          <input type="submit" value="Submit"> 
-          </label>
-        </div>
-      </form>
+      </div>
     </div>
-
-    <a href="#"> <!--Logo-->
-        <!--Logo-->
-        <img src="./images/logo-for-footer.png" alt="Guest-House-logo-footer">
-        <!--Лого білого кольору-->
-    </a>
-
-    <p>&#169; Guest House, LLC. All rights reserved. Powered by Webflow</p> 
-
-    <nav>
-        <a href="tel:+47(0)702881234">+47 (0) 702 88 12 34</a>
-        <a href="mailto:example@webflow.io">&mdash; example@webflow.io</a>
-        <span>Klubbvika 12, 8310 Kabelvag, Norway</span>
-    </nav>
-
   </footer>
 
   <!--Форми для кнопок Contact, Book now-->

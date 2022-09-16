@@ -1,123 +1,319 @@
-html, 
+
 body {
-  height: 100%;  /*--уточнити в процесі роботи по стилізації параметри--*/
   font-family: 'Montserrat', sans-serif;
+  background:#FFFFFF;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  overflow: auto;
+  margin: 0 auto;
 }
 
 /*-----------------------------HEADER---------------------------------------*/ 
-header {
+.header {
   background: #52503B;
-  height: 80px;
+  height: 70px;
   width: 1440px;
-  margin-left: 0px;
   margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
   border-radius: 0px;
+  overflow: hidden;
 }
 
 .header-content {
-  height: 60px;
   width: 1200px;
-  border-radius: 0px;
-  margin-top: 10px;
+  padding: 8px 0px;
+  margin-top: 0px;
   margin-right: 120px;
   margin-bottom: 10px;
-  margin-left: 10px;
+  margin-left: 120px;
+  overflow: hidden;
+}
+
+.header-logo {
+  width: 128px;
+  height: 45px;
+}
+
+.header-menu {
+  margin-top: 0px;
+  margin-right: 356px;
+  margin-bottom: 10px;
+  margin-left: 346px;
+  overflow: hidden;
+}
+
+.header-menu ul{
+  overflow: hidden;
+}
+
+.header-menu li{
+  float: left;
+  color: #FFFFFF;
+  padding: 6px 12px;
+}
+
+/*стилізація посилань*/ 
+.header-menu li a{
+  color: #FFFFFF;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-decoration: none; 
+  border-bottom: 1px solid transparent;
+  padding: 6px 0px;
+}
+
+/*стилізація під то, щоб посилання "підсвічувалось" рисочкою, коли мишкою юзаєш рядом*/ 
+.header-menu li a:hover{
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.header-button {
+  padding: 12px 18px;
+  border-radius: 6px;
+  background: #FFFFFF;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #52503B;
+  text-align: center;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.header-button:hover {
+  background: #FAF8F0;
 }
 
 /*-----------------------------MAIN---------------------------------------*/ 
 
-/*---------------------MAIN-p.1, НЕ стилізовано, 
-необхідно спочатку підключити картинку як фон, потім розміщати на ній контент; 
-змінити колір тексту на білий, коли підключу картинку як фон-------------------------------*/ 
+/*---------------------MAIN-p.1-------------------------------*/ 
+/*задати висоту р.1 та р.1.1 після того, як на картинку буде розміщений блок з тектом*/
 
-.main-p1-1-second-title {
+/*---------------------MAIN-p.1.1-------------------------------*/ 
+.main-p1 {
+  width: 1440px;
+  overflow: hidden;
+}
+
+.main-p1-img {
+  height: 800px;
+  width: 1440px;
+  margin: 0px 0px;
+}
+
+.main-p1-content {
+  height: 304px;
+  width: 1200px;
+  border-radius: 0px;
+  margin: 248px 120px;
+  overflow: hidden;
+}
+
+/*лого білого кольору, повернутись до стилізації після вставки картинки як фону*/ 
+.main-p1-1-logo {
+  
+}
+
+.main-p1-1-title {
   height: 104px;
   width: 1200px;
   border-radius: 0px;
-  margin-top: 38px;
-  margin-right: 120px;
+  margin-top: 36px;
+  margin-right: 0px;
   margin-bottom: 32px;
-  margin-left: 120px;
-  font-family: Montserrat;
-  font-size: 48px;
-  font-weight: 400px;
-  line-height: 52px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #52503B;
+  margin-left: 0px;
+  overflow: hidden;
 }
 
-.main-p1-1-paragraph {
+.main-p1-1-second-title {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 53px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #52503B; 
+}
+
+.main-p1-1-paragraph-border {
   height: 20px;
   width: 292px;
   border-radius: 0px;
   margin-top: 32px;
-  margin-right: 574px;
-  margin-bottom: 268px;
-  margin-left: 574px;
+  margin-right: 454px;
+  margin-bottom: 20px;
+  margin-left: 454px;
+  overflow: hidden;
+}
+
+/*розмістити в ряд і достилізувати (габарити, маржіни)-після розміщення картинки як фону*/ 
+.main-p1-1-paragraph-text {
   font-family: Montserrat;
   font-size: 14px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 20px;
   letter-spacing: 2px;
   text-align: center;
   color: #52503B; 
 }
 
+/*---------------------MAIN-p.1.2-------------------------------*/ 
+
 .main-p1-2-container {
-  background: #FAF8F0;
   height: 410px;
   width: 1440px;
-  margin-left: 0px;
-  margin-top: 0px;
   border-radius: 0px;
+  margin: 0px 0px;
+  background:#FAF8F0;
+  overflow: hidden;
 }
 
 .main-p1-2-content {
   height: 210px;
   width: 800px;
-  margin-top: 100px;
-  margin-right: 320px;
-  margin-bottom: 100px;
-  margin-left: 320px;
+  margin: 100px 320px;
   border-radius: 0px;
+  overflow: hidden;
 }
 
-/*розмістити в ряд і достилізувати (габарити, маржіни)*/ 
-.main-p1-2-paragraph {
+.red-line-main-p1 {
+  height: 8px;
+  width: 42px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 379px;
+  padding-bottom: 30px;
+  padding-left: 379px;
+}
+
+.main-p1-2-content-p-left {
+  height: 172px;
+  width: 384px;
+  border-radius: 0px;
+  overflow: hidden; 
+}
+
+.main-p1-2-paragraph-left-border {
+  overflow: hidden; 
+}
+
+.main-p1-2-paragraph-text {
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
-  color: #333333;
+  color: #333333; 
+}
+
+.main-p1-2-content-p-right {
+  height: 170px;
+  width: 384px;
+  border-radius: 0px;
+  overflow: hidden; 
+}
+
+.main-p1-2-paragraph-right-border {
+  overflow: hidden; 
+}
+
+.main-p1-button {
+  background:#52503B;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+  text-align: center;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-right: 260px;
+  margin-bottom: 6px;
+  margin-left: 0px;
+  height: 42px;
+  width: 106px;
+  border-radius: 6px;
+}
+
+.main-p1-button:hover {
+  background: red;
 }
 
 /*---------------------MAIN-p.2-------------------------------*/
-.main-p2-1-container {
-  background: #FFFFFF;
-  height: 568px;
+/*червона лінія виконана у вигляді картинки, потребує змін після вивчення відповідного матеріалу, поки показала лінію, щоб вималювати картинку блоку; 
+після коригувань лінії обовязково переглянути паддінги по всьому блоку*/ 
+.main-p2 {
+  height: 1168px;
   width: 1440px;
-  margin-left: 0px;
-  margin-top: 0px;
   border-radius: 0px;
+  margin: 0px 0px;
+  overflow: hidden;
 }
 
-/*З огляду на статтю про про блочні елементи виникає питання щодо h1-h6 та p. 
-Якщо заголовки та параграфи являються блоками - то їх можна стилізувати без загортання в div та в одному стилі задавати стилі шрифту та стилі блоку? 
-Я поки так і зробила, бо остаточного розуміння з вивченого на сьогодні так і не маю*/ 
-.first-title {
-  height: 288px;
-  width: 1287px;
+.main-p2-1-container {
+  height: 568px;
+  width: 1440px;
   border-radius: 0px;
-  margin-top: 140px;
-  margin-right: 76px;
-  margin-bottom: 140px;
-  margin-left: 76px;
+  margin: 0px 0px;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+.red-line-main-p2 {
+  height: 8px;
+  width: 42px;
+  border-radius: 0px;
+  padding-top: 100px;
+  padding-right: 699px;
+  padding-bottom: 32px;
+  padding-left: 699px;
+}
+
+.main-p2-1-title-border {
+  border-radius: 0px;
+  overflow: hidden;
+  padding-top: 0px;
+  padding-right: 76px;
+  padding-bottom: 138px;
+  padding-left: 76px;
+}
+
+.main-p2-1-first-title-text {
   font-family: Montserrat;
   font-size: 96px;
-  font-weight: 700px;
+  font-weight: 700;
   line-height: 96px;
   letter-spacing: 0em;
   text-align: center;
@@ -128,82 +324,275 @@ header {
   height: 600px;
   width: 1440px;
   margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
   border-radius: 0px;
+  margin: 0px 0px;
+  overflow: hidden;
 }
 
 /*---------------------MAIN-p.3-------------------------------*/ 
-.main-p3-container {
+/*---------------------MAIN-p.3.1-------------------------------*/ 
+
+.main-p3 {
   background: #FAF8F0;
   height: 530px;
   width: 1440px;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
+  margin: 0px 0px;
   border-radius: 0px;
+  overflow: hidden;
 }
 
 .main-p3-content {
   height: 330px;
   width: 1200px;
-  margin-top: 100px;
-  margin-right: 120px;
-  margin-bottom: 100px;
-  margin-left: 120px;
+  margin: 100px 120px;
   border-radius: 0px;
+  overflow: hidden;
 }
 
-.main-p3-third-title {
-  height: 36px;
-  width: 396px;
+.main-p3-content-p1 {
+  padding-top: 0px;
+  padding-right: 300px;
+  padding-bottom: 32px;
+  padding-left: 300px;
+  overflow: hidden;
+}
+
+.red-line-main-p3 {
+  height: 8px;
+  width: 42px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 279px;
+  padding-bottom: 30px;
+  padding-left: 279px;
+}
+
+.main-p3-title-border {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 102px;
+  padding-bottom: 12px;
+  padding-left: 102px;
+  overflow: hidden;
+}
+
+.main-p3-third-title-texte {
   font-family: Montserrat;
   font-size: 32px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 36px;
   letter-spacing: 0em;
   text-align: center;
-  margin-top: 38px;
-  margin-right: 402px;
-  margin-bottom: 12px;
-  margin-left: 402px;
   color: #52503B;
 }
 
-.main-p3-paragraph {
-  height: 72px;
-  width: 600px;
-  margin-top: 12px;
-  margin-right: 300px;
-  margin-bottom: 32px;
-  margin-left: 300px;
-  border-radius: 0px;
+.main-p3-paragraph-border {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  border-radius: 0px;  
+  overflow: hidden;
+}
+
+.main-p3-paragraph-text {
   font-family: Montserrat;
   font-size: 16px;
-  font-weight: 400px;
-  line-height: 20px;
-  letter-spacing: 0em; 
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
   text-align: center;
   color: #52503B; 
 }
 
-/*Повернутись до стилізації АКРТИКЛІВ після розуміння того як розмістити контейнери в ряд, наразі задавати розміри контейнерів без правильної локації не можливо. 
-ТАКОЖ в ході роботи вирахувати чому не стикується один-до-одного р2 та р3 (попередньо - причина в макеті, детально перевірити розмріри картинки та контейнера)*/
-.main-p3-fourth-title {
-  height: 24px;
-  width: 93px;
+/*---------------------MAIN-p.3.2-------------------------------*/ 
+.main-p3-content-p2 {
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 0px;
+  padding-left: 16px;
+  overflow: hidden;
+}
+
+.article-1 {
+  height: 140px;
+  width: 346px;
   border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 64px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+.main-p3-content-p2-img1 {
+  height: 64px;
+  width: 64px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 141px;
+  padding-bottom: 10px;
+  padding-left: 141px;
+}
+
+.main-p3-title-border1 {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 152px;
+  padding-bottom: 0px;
+  padding-left: 152px;
+  overflow: hidden;
+}
+
+.main-p3-fourth-title-text1 {
   font-family: Montserrat;
   font-size: 16px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
+  text-align: center;
+  color: #52503B;
+}
+
+.main-p3-2-paragraph-border1 {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+.main-p3-2-paragraph-text1 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #52503B;
+}
+
+.article-2 {
+  height: 140px;
+  width: 346px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 64px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+.main-p3-content-p2-img2 {
+  height: 64px;
+  width: 64px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 141px;
+  padding-bottom: 10px;
+  padding-left: 141px;
+}
+
+.main-p3-title-border2 {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 130px;
+  padding-bottom: 0px;
+  padding-left: 130px;
+  overflow: hidden;
+}
+
+.main-p3-fourth-title-text2 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #52503B; 
+}
+
+.main-p3-2-paragraph-border2 {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+.main-p3-2-paragraph-text2 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #52503B;
+}
+
+.article-3 {
+  height: 140px;
+  width: 346px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+.main-p3-content-p2-img3 {
+  height: 64px;
+  width: 64px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 141px;
+  padding-bottom: 10px;
+  padding-left: 141px;
+}
+
+.main-p3-title-border3 {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 126px;
+  padding-bottom: 0px;
+  padding-left: 126px;
+  overflow: hidden;
+}
+
+.main-p3-fourth-title-text3 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #52503B; 
+}
+
+.main-p3-2-paragraph-border3 {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+.main-p3-2-paragraph-text3 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #52503B;
 }
 
 /*---------------------MAIN-p.4-------------------------------*/ 
-.main-p4-container {
+.main-p4 {
 background: #FFFFFF;
 height: 726px;
 width: 1440px;
@@ -212,57 +601,411 @@ margin-right: 0px;
 margin-bottom: 0px;
 margin-left: 0px;
 border-radius: 0px;
+overflow: hidden;
 }
 
 .main-p4-content {
   height: 526px;
   width: 1200px;
-  margin-top: 100px;
-  margin-right: 120px;
-  margin-bottom: 100px;
-  margin-left: 120px;
+  padding-top: 100px;
+  padding-right: 120px;
+  padding-bottom: 100px;
+  padding-left: 120px;
   border-radius: 0px;
+  overflow: hidden;
 }
 
-.main-p4-third-title {
-  height: 36px;
-  width: 328px;
+/*---------------------MAIN-p.4.1-------------------------------*/ 
+.main-p4-content-p1 {
+  padding-top: 0px;
+  padding-right: 584px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  height: 158px;
+  width: 600px;
   border-radius: 0px;
+  overflow: hidden;
+}
+
+.red-line-main-p4 {
+  height: 8px;
+  width: 42px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 558px;
+  padding-bottom: 30px;
+  padding-left: 0px;
+}
+
+.main-p4-title-border {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 272px;
+  padding-bottom: 12px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+.main-p4-third-title-texte {
   font-family: Montserrat;
   font-size: 32px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 36px;
   letter-spacing: 0em;
   text-align: left;
-  margin-top: 38px;
-  margin-right: 856px;
-  margin-bottom: 12px;
-  margin-left: 16px;
   color: #52503B;
 }
 
-.main-p4-paragraph {
-  height: 72px;
-  width: 600px;
-  border-radius: 0px;
-  margin-top: 12px;
-  margin-right: 584px;
-  margin-bottom: 32px;
-  margin-left: 16px;
-  border-radius: 0px;
+.main-p4-paragraph-border {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  border-radius: 0px;  
+  overflow: hidden;
+}
+
+.main-p4-paragraph-text {
   font-family: Montserrat;
   font-size: 16px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
   color: #52503B; 
 }
-/*Повернутись до стилізації АКРТИКЛІВ після розуміння того як розмістити контейнери в ряд, наразі задавати розміри контейнерів без правильної локації не можливо*/
+
+/*---------------------MAIN-p.4.2-------------------------------*/ 
+.main-p4-content-p2 {
+  height: 336px;
+  width: 1168px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 0px;
+  padding-left: 16px;
+  overflow: hidden;
+}
+
+.main-p4-content-p2-1 {
+  overflow: hidden;
+  height: 336px;
+  width: 584px;
+}
+
+/*артикль 1*/ 
+.article-4-1 { 
+  padding-top: 0px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+  padding-left: 0px;
+  overflow: hidden; 
+}
+
+.main-p4-content-p2-img1 {
+  height: 36px;
+  width: 36px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 14px;
+  padding-left: 0px;
+}
+
+.main-p4-title-article-border1 {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 113px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+.main-p4-title-article-text1 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #52503B;
+}
+
+/*артикль 2*/ 
+.article-4-2 { 
+  padding-top: 0px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+.main-p4-content-p2-img2 {
+  height: 36px;
+  width: 36px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 14px;
+  padding-left: 0px;
+}
+
+.main-p4-title-article-border2 {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 196px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+.main-p4-title-article-text2 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #52503B;
+}
+
+/*артикль 3*/ 
+.article-4-3 { 
+  padding-top: 0px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+  padding-left: 0px;
+  overflow: hidden; 
+}
+
+.main-p4-content-p2-img3 {
+  height: 36px;
+  width: 36px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 34px;
+  padding-left: 0px;
+}
+
+.main-p4-title-article-border3 {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 8px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+.main-p4-title-article-text3 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #52503B;
+}
+
+/*артикль 4*/ 
+.article-4-4 { 
+  padding-top: 0px;
+  padding-right: 32px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+.main-p4-content-p2-img4 {
+  height: 36px;
+  width: 36px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 34px;
+  padding-left: 0px;
+}
+
+.main-p4-title-article-border4 {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 74px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+.main-p4-title-article-text4 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #52503B;
+}
+
+.main-p4-content-p2-2 {
+  overflow: hidden;
+  height: 336px;
+  width: 584px;
+}
+
+/*артикль 5*/ 
+.article-4-5 { 
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 32px;
+  padding-left: 0px;
+  overflow: hidden; 
+}
+
+.main-p4-content-p2-img5 {
+  height: 36px;
+  width: 36px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 14px;
+  padding-left: 0px;
+}
+
+.main-p4-title-article-border5 {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 196px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+.main-p4-title-article-text5 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #52503B;
+}
+
+
+/*артикль 6*/ 
+.article-4-6 { 
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 32px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+.main-p4-content-p2-img6 {
+  height: 36px;
+  width: 36px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 14px;
+  padding-left: 0px;
+}
+
+.main-p4-title-article-border6 {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 14px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+.main-p4-title-article-text6 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #52503B;
+}
+
+/*артикль 7*/ 
+.article-4-7 { 
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 32px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+.main-p4-content-p2-img7 {
+  height: 36px;
+  width: 36px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 34px;
+  padding-left: 0px;
+}
+
+.main-p4-title-article-border7 {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 242px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+.main-p4-title-article-text7 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #52503B;
+}
+
+/*артикль 8*/ 
+.article-4-8 { 
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+.main-p4-content-p2-img8 {
+  height: 36px;
+  width: 36px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 34px;
+  padding-left: 0px;
+}
+
+.main-p4-title-article-border8 {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 12px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+.main-p4-title-article-text8 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #52503B;
+}
 
 /*---------------------MAIN-p.5-------------------------------*/
-.main-p5-container {
-  background: #FAF8F0;
+.main-p5 {
   height: 682px;
   width: 1440px;
   border-radius: 0px;
@@ -270,6 +1013,9 @@ border-radius: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
+  border-radius: 0px;
+  background: #FAF8F0;
+  overflow: hidden;
 }
 
 .main-p5-content {
@@ -280,44 +1026,194 @@ border-radius: 0px;
   margin-right: 120px;
   margin-bottom: 150px;
   margin-left: 120px;
+  border-radius: 0px;
+  overflow: hidden;
 }
 
-.main-p5-third-title {
-  height: 36px;
-  width: 200px;
+/*---------------------MAIN-p.5.1-------------------------------*/ 
+
+.main-p5-content-p1 {
+  padding-top: 0px;
+  padding-right: 300px;
+  padding-bottom: 32px;
+  padding-left: 300px;
+  height: 134px;
+  width: 600px;
   border-radius: 0px;
+  overflow: hidden;
+}
+
+.red-line-main-p5 {
+  height: 8px;
+  width: 42px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 279px;
+  padding-bottom: 30px;
+  padding-left: 279px;
+  overflow: hidden;
+}
+
+.main-p5-title-border {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 200px;
+  padding-bottom: 12px;
+  padding-left: 200px;
+  overflow: hidden;
+}
+
+.main-p5-third-title-texte {
   font-family: Montserrat;
   font-size: 32px;
-  font-weight: 400px;
+  ont-weight: 400;
   line-height: 36px;
   letter-spacing: 0em;
-  text-align: center;
-  margin-top: 38px;
-  margin-right: 500px;
-  margin-bottom: 12px;
-  margin-left: 500px;
+    text-align: center;
   color: #52503B;
 }
 
-.main-p5-paragraph {
-  height: 48px;
-  width: 600px;
-  border-radius: 0px;
-  margin-top: 12px;
-  margin-right: 300px;
-  margin-bottom: 32px;
-  margin-left: 300px;
+.main-p5-paragraph-border {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  border-radius: 0px;  
+  overflow: hidden;
+}
+
+.main-p5-paragraph-text {
   font-family: Montserrat;
   font-size: 16px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: center;
   color: #52503B; 
 }
-/*Повернутись до стилізації АКРТИКЛІВ після розуміння того як розмістити контейнери в ряд, наразі задавати розміри контейнерів без правильної локації не можливо*/
+
+/*---------------------MAIN-p.5.2-------------------------------*/ 
+.main-p5-content-p2 {
+  height: 266px;
+  width: 1168px;
+  padding: 0px 16px;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+/*артикль 1*/ 
+.article-5-1 {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  height: 266px;
+  width: 584px;
+  border-radius: 0px;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+.main-p5-title-article-border1 {
+  border-radius: 0px;
+  padding-top: 10px;
+  padding-right: 128px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  overflow: hidden;
+}
+
+.main-p5-title-article-text1 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #52503B;
+}
+
+.main-p5-paragraph-article-border1 {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 48px;
+  padding-bottom: 70px;
+  padding-left: 30px;
+  overflow: hidden;
+}
+
+.main-p5-paragraph-article-text1 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #52503B;
+}
+
+/*артикль 2*/ 
+.article-5-2 {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  height: 266px;
+  width: 584px;
+  border-radius: 0px;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+.main-p5-title-article-border2 {
+  border-radius: 0px;
+  padding-top: 10px;
+  padding-right: 312px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  overflow: hidden;
+}
+
+.main-p5-title-article-text2 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #52503B;
+}
+
+.main-p5-paragraph-article-border2 {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+.main-p5-paragraph-article-text2 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #52503B;
+}
 
 /*---------------------MAIN-p.6-------------------------------*/
+
+.main-p6 {
+  height: 966px;
+  width: 1440px;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
 .main-p6-1-container {
   height: 600px;
   width: 1440px;
@@ -326,109 +1222,545 @@ border-radius: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
   border-radius: 0px;
+  overflow: hidden;
 }
 
 .main-p6-2-container {
   background:#FFFFFF;
   height: 366px;
   width: 1440px;
-  border-radius: 0px;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
+  padding: 0px 0px;
+  overflow: hidden;
 }
 
 .main-p6-2-content {
   height: 166px;
   width: 1168px;
   border-radius: 0px;
-  margin-top: 100px;
-  margin-right: 136px;
-  margin-bottom: 100px;
-  margin-left: 136px;
+  padding-top: 100px;
+  padding-right: 136px;
+  padding-bottom: 100px;
+  padding-left: 136px;
+  overflow: hidden;
 }
 
-.main-p6-2-third-title {
-  height: 36px;
-  width: 258px;
+.main-p6-2-content-text {
+  height: 166px;
+  width: 552px;
+  padding-top: 0px;
+  padding-right: 64px;
+  padding-bottom: 0px;
+  padding-left: 0px;
   border-radius: 0px;
+  overflow: hidden;
+}
+
+.red-line-main-p6 {
+  height: 8px;
+  width: 42px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 510px;
+  padding-bottom: 30px;
+  padding-left: 0px;
+}
+
+.main-p6-title-border {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 294px;
+  padding-bottom: 12px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+.main-p6-third-title-texte {
   font-family: Montserrat;
   font-size: 32px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 36px;
   letter-spacing: 0em;
   text-align: left;
-  margin-top: 38px;
-  margin-right: 358px;
-  margin-bottom: 12px;
-  margin-left: 0px;
   color: #52503B;
 }
 
-.main-p6-2-paragraph {
-  height: 48px;
-  width: 514px;
-  border-radius: 0px;
-  margin-top: 12px;
-  margin-right: 64px;
-  margin-bottom: 32px;
-  margin-left: 0px;
+.main-p6-paragraph-border {
+  padding-top: 0px;
+  padding-right: 38px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  border-radius: 0px;  
+  overflow: hidden;
+}
+
+.main-p6-paragraph-text {
   font-family: Montserrat;
   font-size: 16px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
   color: #52503B; 
 }
-/*Повернутись до стилізації АКРТИКЛІВ після розуміння того як розмістити контейнери в ряд, наразі задавати розміри контейнерів без правильної локації не можливо*/
+
+/*артиклі*/ 
+.main-p6-2-content-article {
+  height: 166px;
+  width: 552px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+/*артикль 1*/ 
+.article-6-1 {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+  padding-left: 0px;
+  height: 66px;
+  width: 260px;
+  overflow: hidden;
+}
+
+.main-p6-content-p2-img1 {
+  height: 36px;
+  width: 36px;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+  padding-left: 0px;
+  border-radius: 0px;
+}
+
+.main-p6-title-article-border1 {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 26px;
+  padding-left: 0px;
+  border-radius: 0px;
+  height: 40px;
+  width: 208px;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.main-p4-title-article-text1 { 
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333333;
+}
+
+/*артикль 2*/ 
+.article-6-2 {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 32px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  height: 66px;
+  width: 260px;
+  overflow: hidden;
+}
+
+.main-p6-content-p2-img2 {
+  height: 36px;
+  width: 36px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+  padding-left: 0px;
+}
+
+.main-p6-title-article-border2 {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 26px;
+  padding-left: 0px;
+  border-radius: 0px;
+  height: 40px;
+  width: 208px;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.main-p4-title-article-text2 { 
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333333;
+}
+
+/*артикль 3*/ 
+.article-6-3 {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 32px;
+  padding-left: 0px;
+  height: 66px;
+  width: 260px;
+  overflow: hidden;
+}
+
+.main-p6-content-p2-img3 {
+  height: 36px;
+  width: 36px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+  padding-left: 0px;
+  border-radius: 0px;
+}
+
+.main-p6-title-article-border3 {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 26px;
+  padding-left: 0px;
+  border-radius: 0px;
+  height: 40px;
+  width: 208px;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.main-p4-title-article-text3 { 
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333333;
+}
+
+/*артикль 4*/ 
+.article-6-4 {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  border-radius: 0px;
+  height: 66px;
+  width: 260px;
+  overflow: hidden;
+}
+
+.main-p6-content-p2-img4 {
+  height: 36px;
+  width: 36px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+  padding-left: 0px;
+  border-radius: 0px;
+}
+
+.main-p6-title-article-border4 {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 26px;
+  padding-left: 0px;
+  border-radius: 0px;
+  height: 40px;
+  width: 208px;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.main-p4-title-article-text4 { 
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333333;
+}
 
 /*---------------------MAIN-p.7-------------------------------*/
-.main-p7-container {
-  background: #FAF8F0;
+
+.main-p7 {
   height: 478px;
   width: 1440px;
   border-radius: 0px;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
+  margin: 0px 0px;
+  background: #FAF8F0;
+  overflow: hidden;
 }
 
-.main-p7-third-title {
-  height: 108px;
-  width: 532px;
+.main-p7-content {
+  height: 278px;
+  width: 1200px;
+  padding: 100px 120px;
   border-radius: 0px;
+  overflow: hidden;
+}
+
+.main-p7-content-text {
+  height: 206px;
+  width: 600px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 300px;
+  padding-bottom: 20px;
+  padding-left: 300px;
+  overflow: hidden;
+}
+
+.red-line-main-p7 {
+  height: 8px;
+  width: 42px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 279px;
+  padding-bottom: 30px;
+  padding-left: 279px;
+}
+
+.main-p7-title-border {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 34px;
+  padding-bottom: 12px;
+  padding-left: 34px;
+  overflow: hidden;
+}
+
+.main-p7-third-title-texte {
   font-family: Montserrat;
   font-size: 32px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 36px;
   letter-spacing: 0em;
   text-align: center;
-  margin-top: 138px;
-  margin-right: 454px;
-  margin-bottom: 12px;
-  margin-left: 454px;
   color: #52503B;
 }
 
-.main-p7-paragraph {
-  height: 48px;
-  width: 600px;
+.main-p7-paragraph-border {
   border-radius: 0px;
-  margin-top: 12px;
-  margin-right: 420px;
-  margin-bottom: 20px;
-  margin-left: 420px;
+  padding: 0px 0px;
+  overflow: hidden;
+}
+
+.main-p7-paragraph-text {
   font-family: Montserrat;
   font-size: 16px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: center;
-  color: #52503B; 
+  color: #52503B;
 }
+
+.main-p7-content-button {
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 0px;
+  padding-left: 16px;
+  overflow: hidden;
+}
+
+.main-p7-button-contact {
+  border-radius: 6px;
+  font-family: Montserrat;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color:#52503B; 
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  height: 52px;
+  width: 116px;
+  background: #FAF8F0;
+  margin-top: 0px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  margin-left: 450px;
+  padding-top: 1px;
+  padding-right: 6px;
+  padding-bottom: 1px;
+  padding-right: 6px;
+  }
+
+.main-p7-button-contact:hover {
+  background: red;
+}
+
+.main-p7-button-book {
+  border-radius: 6px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  background: #52503B; 
+  height: 52px;
+  width: 116px;
+  margin-top: 0px;
+  margin-right: 450px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 1px;
+  padding-right: 6px;
+  padding-bottom: 1px;
+  padding-right: 6px;
+}
+
+.main-p7-button-book:hover {
+  background: red;
+}
+
 /*Повернутись до стилізації кнопок/
 
-/*---------------------FOOTER - не стилізовано-------------------------------*/
+/*---------------------FOOTER, поверутись до стилізації після вивчення теми по стилізації форм, значків-----------------------*/
+.footer {
+  height: 608px;
+  width: 1440px;
+  border-radius: 0px;
+  background: #52503B;
+  margin: 0px 0px;
+  overflow: hidden;
+}
+
+.footer-content {
+  height: 408px;
+  width: 1168px;
+  left: 136px;
+  border-radius: 0px;
+  margin: 100px 136px;
+  overflow: hidden;
+}
+
+.pages {
+  height: 200px;
+  width: 280px;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.footer-pages-title { 
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.footer-pages-menu {
+  overflow: hidden;
+}
+
+.footer-pages-menu ul{
+  overflow: hidden;
+}
+
+.footer-pages-menu li{
+  color: #FFFFFF;
+  padding: 4px 12px;
+}
+
+/*стилізація посилань*/ 
+.footer-pages-menu li a{
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none; 
+  border-bottom: 1px solid transparent;
+  padding: 10px 0px;
+}
+
+/*стилізація під то, щоб посилання "підсвічувалось" рисочкою, коли мишкою юзаєш рядом*/ 
+.footer-pages-menu li a:hover{
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.social-media {
+  height: 200px;
+  width: 280px;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.footer-social-media-title {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.footer-social-media a{
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none; 
+  border-bottom: 1px solid transparent;
+  padding: 10px 0px;
+}
+
+.newsletter {
+  height: 200px;
+  width: 576px;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.footer-bottom {
+  height: 160px;
+  width: 1168px;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.footer-logo {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.footer-bottom-paragraph {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFF;
+}
+
