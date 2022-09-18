@@ -1,4 +1,5 @@
 
+/*-----------------------------Загальні стилі---------------------------------------*/ 
 body {
   font-family: 'Montserrat', sans-serif;
   background:#FFFFFF;
@@ -23,43 +24,34 @@ body {
 .container {
   width: 100%;
   max-width: 1440px;
-  overflow: auto;
-  margin: 0 auto;
+  overflow: auto; /*для flot-елементів (додаткова перестраховка)*/
+  margin: 0 auto; /*щоб контент сайту був посередині*/ 
 }
 
 /*-----------------------------HEADER---------------------------------------*/ 
 .header {
   background: #52503B;
-  height: 70px;
-  width: 1440px;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
+  width: 100%;
+  max-width: 1440px;
   border-radius: 0px;
   overflow: hidden;
 }
 
 .header-content {
   width: 1200px;
-  padding: 8px 0px;
-  margin-top: 0px;
   margin-right: 120px;
-  margin-bottom: 10px;
   margin-left: 120px;
+  margin-bottom: 10px;
   overflow: hidden;
 }
 
 .header-logo {
   width: 128px;
-  height: 45px;
+  margin-top: 8px;
 }
 
 .header-menu {
-  margin-top: 0px;
-  margin-right: 356px;
-  margin-bottom: 10px;
-  margin-left: 346px;
+  margin-left: 350px;
   overflow: hidden;
 }
 
@@ -68,9 +60,9 @@ body {
 }
 
 .header-menu li{
-  float: left;
+  float: left;  /*скорочений варіант як кожну li розмістити в ряд, не прописуючи в HTML кожній li свій клас - вказуємо header-menu li*/ 
   color: #FFFFFF;
-  padding: 6px 12px;
+  padding: 20px 6px;
 }
 
 /*стилізація посилань*/ 
@@ -81,30 +73,27 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
-  text-decoration: none; 
-  border-bottom: 1px solid transparent;
-  padding: 6px 0px;
+  text-decoration: none; /*прибираємо стилі що є за замовчуванням*/ 
+  border-bottom: 1px solid transparent; 
+  padding: 10px 6px;
 }
 
-/*стилізація під то, щоб посилання "підсвічувалось" рисочкою, коли мишкою юзаєш рядом*/ 
+/*стилізація під то, щоб посилання "підсвічувалось" рисочкою*/ 
 .header-menu li a:hover{
   border-bottom: 1px solid #FFFFFF;
 }
 
 .header-button {
-  padding: 12px 18px;
-  border-radius: 6px;
-  background: #FFFFFF;
   font-family: Montserrat;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
   line-height: 20px;
+  text-align: left;
+  border-radius: 6px;
   color: #52503B;
-  text-align: center;
-  border: none;
-  box-shadow: none;
-  cursor: pointer;
+  background: #FFFFFF;
+  padding: 12px 18px;
+  margin-top: 8px;
 }
 
 .header-button:hover {
@@ -114,41 +103,35 @@ body {
 /*-----------------------------MAIN---------------------------------------*/ 
 
 /*---------------------MAIN-p.1-------------------------------*/ 
-/*задати висоту р.1 та р.1.1 після того, як на картинку буде розміщений блок з тектом*/
+/*ЗВЕРТАЮ УВАГУ - так як картинка є фоном, на якому має розміщуватись текст (коли пройдемо відповідну тему) - 
+зараз блоки в частині MAIN-p.1 розміщені із зміщенням. Прошу НЕ оцінювати даний блок як остаточний!*/
 
 /*---------------------MAIN-p.1.1-------------------------------*/ 
 .main-p1 {
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   overflow: hidden;
 }
 
 .main-p1-img {
-  height: 800px;
-  width: 1440px;
-  margin: 0px 0px;
+  width: 100%;
+  max-width: 1440px;
 }
 
 .main-p1-content {
-  height: 304px;
   width: 1200px;
-  border-radius: 0px;
   margin: 248px 120px;
   overflow: hidden;
 }
 
 /*лого білого кольору, повернутись до стилізації після вставки картинки як фону*/ 
 .main-p1-1-logo {
-  
+  margin-left: 472px;
+  width: 256px;
 }
 
 .main-p1-1-title {
-  height: 104px;
-  width: 1200px;
-  border-radius: 0px;
-  margin-top: 36px;
-  margin-right: 0px;
-  margin-bottom: 32px;
-  margin-left: 0px;
+  margin-top: 38px;
   overflow: hidden;
 }
 
@@ -157,23 +140,17 @@ body {
   font-size: 48px;
   font-weight: 400;
   line-height: 53px;
-  letter-spacing: 0em;
   text-align: center;
   color: #52503B; 
 }
 
 .main-p1-1-paragraph-border {
-  height: 20px;
-  width: 292px;
-  border-radius: 0px;
-  margin-top: 32px;
-  margin-right: 454px;
-  margin-bottom: 20px;
-  margin-left: 454px;
+  padding-left: 454px;
+  padding-right: 454px;
+  margin-top: 34px;
   overflow: hidden;
 }
 
-/*розмістити в ряд і достилізувати (габарити, маржіни)-після розміщення картинки як фону*/ 
 .main-p1-1-paragraph-text {
   font-family: Montserrat;
   font-size: 14px;
@@ -187,36 +164,32 @@ body {
 /*---------------------MAIN-p.1.2-------------------------------*/ 
 
 .main-p1-2-container {
-  height: 410px;
-  width: 1440px;
-  border-radius: 0px;
-  margin: 0px 0px;
+  width: 100%;
+  max-width: 1440px;
   background:#FAF8F0;
   overflow: hidden;
 }
 
 .main-p1-2-content {
-  height: 210px;
   width: 800px;
   margin: 100px 320px;
-  border-radius: 0px;
   overflow: hidden;
 }
 
 .red-line-main-p1 {
   height: 8px;
   width: 42px;
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 379px;
-  padding-bottom: 30px;
-  padding-left: 379px;
+  margin-left: 364px;
+  margin-bottom: 30px;
+}
+
+.main-p1-2-content-p {
+  overflow: hidden;
 }
 
 .main-p1-2-content-p-left {
-  height: 172px;
   width: 384px;
-  border-radius: 0px;
+  padding-bottom: 10px;
   overflow: hidden; 
 }
 
@@ -229,15 +202,13 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: left;
   color: #333333; 
 }
 
 .main-p1-2-content-p-right {
-  height: 170px;
   width: 384px;
-  border-radius: 0px;
+  padding-bottom: 10px;
   overflow: hidden; 
 }
 
@@ -258,13 +229,13 @@ body {
   border: none;
   box-shadow: none;
   cursor: pointer;
-  margin-top: 40px;
-  margin-right: 260px;
-  margin-bottom: 6px;
-  margin-left: 0px;
-  height: 42px;
   width: 106px;
   border-radius: 6px;
+  padding-top: 10px;
+  padding-right: 6px;
+  padding-left: 6px;
+  padding-bottom: 10px;
+  margin-top: 40px;
 }
 
 .main-p1-button:hover {
@@ -273,20 +244,16 @@ body {
 
 /*---------------------MAIN-p.2-------------------------------*/
 /*червона лінія виконана у вигляді картинки, потребує змін після вивчення відповідного матеріалу, поки показала лінію, щоб вималювати картинку блоку; 
-після коригувань лінії обовязково переглянути паддінги по всьому блоку*/ 
+після коригувань лінії обовязково переглянути відступи по всьому блоку*/ 
 .main-p2 {
-  height: 1168px;
-  width: 1440px;
-  border-radius: 0px;
-  margin: 0px 0px;
+  width: 100%;
+  max-width: 1440px;
   overflow: hidden;
 }
 
 .main-p2-1-container {
-  height: 568px;
-  width: 1440px;
-  border-radius: 0px;
-  margin: 0px 0px;
+  width: 100%;
+  max-width: 1440px;
   background: #FFFFFF;
   overflow: hidden;
 }
@@ -294,20 +261,16 @@ body {
 .red-line-main-p2 {
   height: 8px;
   width: 42px;
-  border-radius: 0px;
   padding-top: 100px;
-  padding-right: 699px;
   padding-bottom: 32px;
-  padding-left: 699px;
+  padding-left: 698px;
 }
 
 .main-p2-1-title-border {
-  border-radius: 0px;
+  width: 1288px;
+  margin-bottom: 138px;
+  margin-left: 76px;
   overflow: hidden;
-  padding-top: 0px;
-  padding-right: 76px;
-  padding-bottom: 138px;
-  padding-left: 76px;
 }
 
 .main-p2-1-first-title-text {
@@ -315,64 +278,57 @@ body {
   font-size: 96px;
   font-weight: 700;
   line-height: 96px;
-  letter-spacing: 0em;
   text-align: center;
   color: #52503B;
 }
 
 .main-p2-2-container {
-  height: 600px;
-  width: 1440px;
-  margin-top: 0px;
-  border-radius: 0px;
-  margin: 0px 0px;
+  width: 100%;
+  max-width: 1440px;
   overflow: hidden;
+}
+
+.main-p2-2-img {
+  width: 100%;
+  max-width: 1440px;
 }
 
 /*---------------------MAIN-p.3-------------------------------*/ 
 /*---------------------MAIN-p.3.1-------------------------------*/ 
 
 .main-p3 {
-  background: #FAF8F0;
-  height: 530px;
-  width: 1440px;
-  margin: 0px 0px;
-  border-radius: 0px;
+  width: 100%;
+  max-width: 1440px;
+  background: #FAF8F0; 
   overflow: hidden;
 }
 
 .main-p3-content {
-  height: 330px;
   width: 1200px;
-  margin: 100px 120px;
-  border-radius: 0px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 120px;
   overflow: hidden;
 }
 
 .main-p3-content-p1 {
-  padding-top: 0px;
-  padding-right: 300px;
-  padding-bottom: 32px;
-  padding-left: 300px;
+  width: 600px;
+  margin-bottom: 32px;
+  margin-left: 300px;
   overflow: hidden;
 }
 
 .red-line-main-p3 {
   height: 8px;
   width: 42px;
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 279px;
-  padding-bottom: 30px;
-  padding-left: 279px;
+  margin-bottom: 28px;
+  margin-left: 278px;
 }
 
 .main-p3-title-border {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 102px;
-  padding-bottom: 12px;
-  padding-left: 102px;
+  width: 396px;
+  margin-left: 102px;
+  margin-bottom: 12px;
   overflow: hidden;
 }
 
@@ -381,17 +337,11 @@ body {
   font-size: 32px;
   font-weight: 400;
   line-height: 36px;
-  letter-spacing: 0em;
   text-align: center;
   color: #52503B;
 }
 
-.main-p3-paragraph-border {
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  border-radius: 0px;  
+.main-p3-paragraph-border {  
   overflow: hidden;
 }
 
@@ -400,47 +350,32 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: center;
   color: #52503B; 
 }
 
 /*---------------------MAIN-p.3.2-------------------------------*/ 
 .main-p3-content-p2 {
-  padding-top: 0px;
-  padding-right: 16px;
-  padding-bottom: 0px;
-  padding-left: 16px;
+  width: 1168px;
+  margin-left: 16px;
+  margin-right: 16px;
   overflow: hidden;
 }
 
 .article-1 {
-  height: 140px;
   width: 346px;
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 64px;
-  padding-bottom: 0px;
-  padding-left: 0px;
+  margin-right: 64px;
   overflow: hidden;
 }
 
 .main-p3-content-p2-img1 {
   height: 64px;
   width: 64px;
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 141px;
-  padding-bottom: 10px;
-  padding-left: 141px;
+  margin-bottom: 10px;
+  margin-left: 142px;
 }
 
 .main-p3-title-border1 {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 152px;
-  padding-bottom: 0px;
-  padding-left: 152px;
   overflow: hidden;
 }
 
@@ -449,17 +384,11 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: center;
   color: #52503B;
 }
 
 .main-p3-2-paragraph-border1 {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
   overflow: hidden;
 }
 
@@ -468,38 +397,24 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: center;
   color: #52503B;
 }
 
 .article-2 {
-  height: 140px;
   width: 346px;
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 64px;
-  padding-bottom: 0px;
-  padding-left: 0px;
+  margin-right: 64px;
   overflow: hidden;
 }
 
 .main-p3-content-p2-img2 {
   height: 64px;
   width: 64px;
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 141px;
-  padding-bottom: 10px;
-  padding-left: 141px;
+  margin-bottom: 10px;
+  margin-left: 142px;
 }
 
 .main-p3-title-border2 {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 130px;
-  padding-bottom: 0px;
-  padding-left: 130px;
   overflow: hidden;
 }
 
@@ -508,17 +423,11 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: center;
   color: #52503B; 
 }
 
 .main-p3-2-paragraph-border2 {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
   overflow: hidden;
 }
 
@@ -527,38 +436,23 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: center;
   color: #52503B;
 }
 
 .article-3 {
-  height: 140px;
   width: 346px;
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
   overflow: hidden;
 }
 
 .main-p3-content-p2-img3 {
   height: 64px;
   width: 64px;
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 141px;
-  padding-bottom: 10px;
-  padding-left: 141px;
+  margin-bottom: 10px;
+  margin-left: 142px;
 }
 
 .main-p3-title-border3 {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 126px;
-  padding-bottom: 0px;
-  padding-left: 126px;
   overflow: hidden;
 }
 
@@ -567,17 +461,11 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: center;
   color: #52503B; 
 }
 
 .main-p3-2-paragraph-border3 {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
   overflow: hidden;
 }
 
@@ -586,63 +474,40 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: center;
   color: #52503B;
 }
 
 /*---------------------MAIN-p.4-------------------------------*/ 
 .main-p4 {
-background: #FFFFFF;
-height: 726px;
-width: 1440px;
-margin-top: 0px;
-margin-right: 0px;
-margin-bottom: 0px;
-margin-left: 0px;
-border-radius: 0px;
-overflow: hidden;
+  width: 100%;
+  max-width: 1440px;
+  background: #FFFFFF;
+  overflow: hidden;
 }
 
 .main-p4-content {
-  height: 526px;
   width: 1200px;
-  padding-top: 100px;
-  padding-right: 120px;
-  padding-bottom: 100px;
-  padding-left: 120px;
-  border-radius: 0px;
+  margin: 100px 120px;
   overflow: hidden;
 }
 
 /*---------------------MAIN-p.4.1-------------------------------*/ 
 .main-p4-content-p1 {
-  padding-top: 0px;
-  padding-right: 584px;
-  padding-bottom: 32px;
-  padding-left: 16px;
-  height: 158px;
   width: 600px;
-  border-radius: 0px;
+  margin-bottom: 32px;
   overflow: hidden;
 }
 
 .red-line-main-p4 {
   height: 8px;
   width: 42px;
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 558px;
-  padding-bottom: 30px;
-  padding-left: 0px;
+  margin-bottom: 28px;
 }
 
 .main-p4-title-border {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 272px;
-  padding-bottom: 12px;
-  padding-left: 0px;
+  width: 328px;
+  margin-bottom: 12px;
   overflow: hidden;
 }
 
@@ -651,17 +516,11 @@ overflow: hidden;
   font-size: 32px;
   font-weight: 400;
   line-height: 36px;
-  letter-spacing: 0em;
   text-align: left;
   color: #52503B;
 }
 
-.main-p4-paragraph-border {
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  border-radius: 0px;  
+.main-p4-paragraph-border {  
   overflow: hidden;
 }
 
@@ -670,54 +529,38 @@ overflow: hidden;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
   color: #52503B; 
 }
 
 /*---------------------MAIN-p.4.2-------------------------------*/ 
 .main-p4-content-p2 {
-  height: 336px;
   width: 1168px;
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 16px;
-  padding-bottom: 0px;
-  padding-left: 16px;
+  margin-right: 16px;
+  margin-left: 16px;
   overflow: hidden;
 }
 
 .main-p4-content-p2-1 {
+  width: 568px;
   overflow: hidden;
-  height: 336px;
-  width: 584px;
 }
 
 /*артикль 1*/ 
 .article-4-1 { 
-  padding-top: 0px;
-  padding-right: 32px;
-  padding-bottom: 32px;
-  padding-left: 0px;
+  width: 568px;
+  margin-bottom: 32px;
   overflow: hidden; 
 }
 
 .main-p4-content-p2-img1 {
   height: 36px;
   width: 36px;
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 16px;
-  padding-bottom: 14px;
-  padding-left: 0px;
+  margin-right: 16px; 
 }
 
 .main-p4-title-article-border1 {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 113px;
-  padding-bottom: 0px;
-  padding-left: 0px;
+  padding-bottom: 10px;
   overflow: hidden;
 }
 
@@ -726,36 +569,34 @@ overflow: hidden;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
+  text-align: left;
+  color: #52503B;
+}
+
+.main-p4-title-article-paragraph {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
   text-align: left;
   color: #52503B;
 }
 
 /*артикль 2*/ 
 .article-4-2 { 
-  padding-top: 0px;
-  padding-right: 32px;
-  padding-bottom: 32px;
-  padding-left: 0px;
+  width: 568px;
+  margin-bottom: 32px;
   overflow: hidden;
 }
 
 .main-p4-content-p2-img2 {
   height: 36px;
   width: 36px;
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 16px;
-  padding-bottom: 14px;
-  padding-left: 0px;
+  margin-right: 16px;
 }
 
 .main-p4-title-article-border2 {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 196px;
-  padding-bottom: 0px;
-  padding-left: 0px;
+  padding-bottom: 10px;
   overflow: hidden;
 }
 
@@ -764,36 +605,26 @@ overflow: hidden;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: left;
   color: #52503B;
 }
 
 /*артикль 3*/ 
 .article-4-3 { 
-  padding-top: 0px;
-  padding-right: 32px;
-  padding-bottom: 32px;
-  padding-left: 0px;
+  width: 568px;
+  margin-bottom: 32px;
   overflow: hidden; 
 }
 
 .main-p4-content-p2-img3 {
   height: 36px;
   width: 36px;
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 16px;
-  padding-bottom: 34px;
-  padding-left: 0px;
+  margin-right: 16px;
 }
 
 .main-p4-title-article-border3 {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 8px;
-  padding-bottom: 0px;
-  padding-left: 0px;
+  width: 516px;
+  padding-bottom: 10px;
   overflow: hidden;
 }
 
@@ -802,36 +633,24 @@ overflow: hidden;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: left;
   color: #52503B;
 }
 
 /*артикль 4*/ 
 .article-4-4 { 
-  padding-top: 0px;
-  padding-right: 32px;
-  padding-bottom: 0px;
-  padding-left: 0px;
+  width: 568px;
   overflow: hidden;
 }
 
 .main-p4-content-p2-img4 {
   height: 36px;
   width: 36px;
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 16px;
-  padding-bottom: 34px;
-  padding-left: 0px;
+  margin-right: 16px;
 }
 
 .main-p4-title-article-border4 {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 74px;
-  padding-bottom: 0px;
-  padding-left: 0px;
+  padding-bottom: 30px;
   overflow: hidden;
 }
 
@@ -840,42 +659,30 @@ overflow: hidden;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: left;
   color: #52503B;
 }
 
 .main-p4-content-p2-2 {
   overflow: hidden;
-  height: 336px;
-  width: 584px;
+  width: 568px;
 }
 
 /*артикль 5*/ 
 .article-4-5 { 
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 32px;
-  padding-left: 0px;
+  width: 568px;
+  margin-bottom: 32px;
   overflow: hidden; 
 }
 
 .main-p4-content-p2-img5 {
   height: 36px;
   width: 36px;
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 16px;
-  padding-bottom: 14px;
-  padding-left: 0px;
+  margin-right: 16px;
 }
 
 .main-p4-title-article-border5 {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 196px;
-  padding-bottom: 0px;
-  padding-left: 0px;
+  padding-bottom: 10px;
   overflow: hidden;
 }
 
@@ -884,37 +691,25 @@ overflow: hidden;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: left;
   color: #52503B;
 }
 
-
 /*артикль 6*/ 
 .article-4-6 { 
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 32px;
-  padding-left: 0px;
+  width: 568px;
+  margin-bottom: 32px;
   overflow: hidden;
 }
 
 .main-p4-content-p2-img6 {
   height: 36px;
   width: 36px;
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 16px;
-  padding-bottom: 14px;
-  padding-left: 0px;
+  margin-right: 16px;
 }
 
 .main-p4-title-article-border6 {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 14px;
-  padding-bottom: 0px;
-  padding-left: 0px;
+  padding-bottom: 10px;
   overflow: hidden;
 }
 
@@ -923,36 +718,25 @@ overflow: hidden;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: left;
   color: #52503B;
 }
 
 /*артикль 7*/ 
 .article-4-7 { 
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 32px;
-  padding-left: 0px;
+  width: 568px;
+  margin-bottom: 32px;
   overflow: hidden;
 }
 
 .main-p4-content-p2-img7 {
   height: 36px;
   width: 36px;
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 16px;
-  padding-bottom: 34px;
-  padding-left: 0px;
+  margin-right: 16px;
 }
 
 .main-p4-title-article-border7 {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 242px;
-  padding-bottom: 0px;
-  padding-left: 0px;
+  padding-bottom: 30px;
   overflow: hidden;
 }
 
@@ -961,36 +745,24 @@ overflow: hidden;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: left;
   color: #52503B;
 }
 
 /*артикль 8*/ 
 .article-4-8 { 
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
+  width: 568px;
   overflow: hidden;
 }
 
 .main-p4-content-p2-img8 {
   height: 36px;
   width: 36px;
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 16px;
-  padding-bottom: 34px;
-  padding-left: 0px;
+  margin-right: 16px;
 }
 
 .main-p4-title-article-border8 {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 12px;
-  padding-bottom: 0px;
-  padding-left: 0px;
+  padding-bottom: 10px;
   overflow: hidden;
 }
 
@@ -999,86 +771,62 @@ overflow: hidden;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: left;
   color: #52503B;
 }
 
 /*---------------------MAIN-p.5-------------------------------*/
 .main-p5 {
-  height: 682px;
-  width: 1440px;
-  border-radius: 0px;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  border-radius: 0px;
+  width: 100%;
+  max-width: 1440px;
   background: #FAF8F0;
   overflow: hidden;
 }
 
 .main-p5-content {
-  height: 432px;
-  width: 1200px;
-  border-radius: 0px;
   margin-top: 100px;
-  margin-right: 120px;
-  margin-bottom: 150px;
   margin-left: 120px;
-  border-radius: 0px;
   overflow: hidden;
 }
 
-/*---------------------MAIN-p.5.1-------------------------------*/ 
+/*---------------------MAIN-p.5.1 - відгуки у частині р.5 у вигляді слайдеру, 
+після пройдення відповідного матеріалу будуть внесені коригування в частині розташування слайдеру та відстаней 
+по всьому блоку р.5, бо наразі блоки зміщені один на одного-------------------------------*/ 
 
 .main-p5-content-p1 {
-  padding-top: 0px;
-  padding-right: 300px;
-  padding-bottom: 32px;
-  padding-left: 300px;
-  height: 134px;
   width: 600px;
-  border-radius: 0px;
+  margin-right: 300px;
+  margin-bottom: 32px;
+  margin-left: 300px;
   overflow: hidden;
 }
 
 .red-line-main-p5 {
   height: 8px;
   width: 42px;
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 279px;
-  padding-bottom: 30px;
-  padding-left: 279px;
+  margin-left: 278px;
+  margin-bottom: 28px;
   overflow: hidden;
 }
 
 .main-p5-title-border {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 200px;
-  padding-bottom: 12px;
-  padding-left: 200px;
+  width: 200px;
+  margin-left: 200px;
+  margin-bottom: 12px;
   overflow: hidden;
 }
 
 .main-p5-third-title-texte {
   font-family: Montserrat;
   font-size: 32px;
-  ont-weight: 400;
+  font-weight: 400;
   line-height: 36px;
-  letter-spacing: 0em;
-    text-align: center;
+  text-align: center;
   color: #52503B;
 }
 
-.main-p5-paragraph-border {
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  border-radius: 0px;  
+.main-p5-paragraph-border { 
+  width: 600px;
   overflow: hidden;
 }
 
@@ -1087,40 +835,30 @@ overflow: hidden;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: center;
   color: #52503B; 
 }
 
-/*---------------------MAIN-p.5.2-------------------------------*/ 
+/*---------------------MAIN-p.5.2 - відгуки у вигляді слайдеру, 
+після пройдення відповідного матеріалу будуть внесені коригування в частині розташування слайдеру та відстаней по всьому блоку р.5-------------------------------*/ 
+
 .main-p5-content-p2 {
-  height: 266px;
-  width: 1168px;
-  padding: 0px 16px;
-  border-radius: 0px;
   overflow: hidden;
 }
 
 /*артикль 1*/ 
 .article-5-1 {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  height: 266px;
-  width: 584px;
-  border-radius: 0px;
+  width: 524px;
   background: #FFFFFF;
+  padding: 30px;
+  margin-right: 20px;
+  margin-left: 16px;
   overflow: hidden;
 }
 
 .main-p5-title-article-border1 {
-  border-radius: 0px;
-  padding-top: 10px;
-  padding-right: 128px;
-  padding-bottom: 10px;
-  padding-left: 30px;
+  width: 426px;
+  margin-top: 8px;
   overflow: hidden;
 }
 
@@ -1129,17 +867,13 @@ overflow: hidden;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
   color: #52503B;
 }
 
 .main-p5-paragraph-article-border1 {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 48px;
-  padding-bottom: 70px;
-  padding-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 18px;
   overflow: hidden;
 }
 
@@ -1148,31 +882,31 @@ overflow: hidden;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
+  text-align: left;
+  color: #52503B;
+}
+
+.main-p5-paragraph2-article-text1 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
   text-align: left;
   color: #52503B;
 }
 
 /*артикль 2*/ 
 .article-5-2 {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  height: 266px;
-  width: 584px;
-  border-radius: 0px;
+  width: 524px;
   background: #FFFFFF;
+  padding: 30px;
+  margin-right: 20px;
   overflow: hidden;
 }
 
 .main-p5-title-article-border2 {
-  border-radius: 0px;
-  padding-top: 10px;
-  padding-right: 312px;
-  padding-bottom: 10px;
-  padding-left: 30px;
+  width: 426px;
+  margin-top: 8px;
   overflow: hidden;
 }
 
@@ -1181,17 +915,13 @@ overflow: hidden;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
   color: #52503B;
 }
 
 .main-p5-paragraph-article-border2 {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
+  margin-top: 10px;
+  margin-bottom: 18px;
   overflow: hidden;
 }
 
@@ -1200,7 +930,62 @@ overflow: hidden;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
+  text-align: left;
+  color: #52503B;
+}
+
+.main-p5-paragraph2-article-text2 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #52503B;
+}
+
+/*артикль 3*/ 
+.article-5-3 {
+  width: 524px;
+  background: #FFFFFF;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.main-p5-title-article-border3 {
+  width: 426px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.main-p5-title-article-text3 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #52503B;
+}
+
+.main-p5-paragraph-article-border3 {
+  margin-top: 10px;
+  margin-bottom: 18px;
+  overflow: hidden;
+}
+
+.main-p5-paragraph-article-text3 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #52503B;
+}
+
+.main-p5-paragraph2-article-text3 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
   text-align: left;
   color: #52503B;
 }
@@ -1208,69 +993,45 @@ overflow: hidden;
 /*---------------------MAIN-p.6-------------------------------*/
 
 .main-p6 {
-  height: 966px;
-  width: 1440px;
-  border-radius: 0px;
+  width: 100%;
+  max-width: 1440px;
   overflow: hidden;
 }
 
 .main-p6-1-container {
-  height: 600px;
-  width: 1440px;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  border-radius: 0px;
+  width: 100%;
+  max-width: 1440px;
   overflow: hidden;
 }
 
 .main-p6-2-container {
+  width: 100%;
+  max-width: 1440px;
   background:#FFFFFF;
-  height: 366px;
-  width: 1440px;
-  padding: 0px 0px;
   overflow: hidden;
 }
 
 .main-p6-2-content {
-  height: 166px;
   width: 1168px;
-  border-radius: 0px;
-  padding-top: 100px;
-  padding-right: 136px;
-  padding-bottom: 100px;
-  padding-left: 136px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 136px;
   overflow: hidden;
 }
 
 .main-p6-2-content-text {
-  height: 166px;
   width: 552px;
-  padding-top: 0px;
-  padding-right: 64px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  border-radius: 0px;
   overflow: hidden;
 }
 
 .red-line-main-p6 {
   height: 8px;
   width: 42px;
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 510px;
-  padding-bottom: 30px;
-  padding-left: 0px;
+  margin-bottom: 30px;
 }
 
 .main-p6-title-border {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 294px;
-  padding-bottom: 12px;
-  padding-left: 0px;
+  margin-bottom: 12px;
   overflow: hidden;
 }
 
@@ -1279,17 +1040,12 @@ overflow: hidden;
   font-size: 32px;
   font-weight: 400;
   line-height: 36px;
-  letter-spacing: 0em;
   text-align: left;
   color: #52503B;
 }
 
 .main-p6-paragraph-border {
-  padding-top: 0px;
-  padding-right: 38px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  border-radius: 0px;  
+  width: 552px;
   overflow: hidden;
 }
 
@@ -1298,31 +1054,19 @@ overflow: hidden;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
   color: #52503B; 
 }
 
 /*артиклі*/ 
 .main-p6-2-content-article {
-  height: 166px;
   width: 552px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  border-radius: 0px;
   overflow: hidden;
 }
 
 /*артикль 1*/ 
 .article-6-1 {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 32px;
-  padding-bottom: 32px;
-  padding-left: 0px;
-  height: 66px;
+  margin-bottom: 34px;
   width: 260px;
   overflow: hidden;
 }
@@ -1330,43 +1074,26 @@ overflow: hidden;
 .main-p6-content-p2-img1 {
   height: 36px;
   width: 36px;
-  padding-top: 0px;
   padding-right: 16px;
-  padding-bottom: 32px;
-  padding-left: 0px;
-  border-radius: 0px;
 }
 
 .main-p6-title-article-border1 {
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 26px;
-  padding-left: 0px;
-  border-radius: 0px;
-  height: 40px;
   width: 208px;
-  border-radius: 0px;
+  padding-bottom: 26px;
   overflow: hidden;
 }
 
-.main-p4-title-article-text1 { 
+.main-p6-title-article-text1 { 
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: left;
   color: #333333;
 }
 
 /*артикль 2*/ 
 .article-6-2 {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 32px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  height: 66px;
   width: 260px;
   overflow: hidden;
 }
@@ -1374,43 +1101,27 @@ overflow: hidden;
 .main-p6-content-p2-img2 {
   height: 36px;
   width: 36px;
-  border-radius: 0px;
-  padding-top: 0px;
   padding-right: 16px;
-  padding-bottom: 32px;
-  padding-left: 0px;
 }
 
 .main-p6-title-article-border2 {
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 26px;
-  padding-left: 0px;
-  border-radius: 0px;
-  height: 40px;
   width: 208px;
-  border-radius: 0px;
+  padding-bottom: 26px;
   overflow: hidden;
 }
 
-.main-p4-title-article-text2 { 
+.main-p6-title-article-text2 { 
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: left;
   color: #333333;
 }
 
 /*артикль 3*/ 
 .article-6-3 {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 32px;
-  padding-left: 0px;
-  height: 66px;
+  margin-bottom: 34px;
   width: 260px;
   overflow: hidden;
 }
@@ -1418,45 +1129,26 @@ overflow: hidden;
 .main-p6-content-p2-img3 {
   height: 36px;
   width: 36px;
-  border-radius: 0px;
-  padding-top: 0px;
   padding-right: 16px;
-  padding-bottom: 32px;
-  padding-left: 0px;
-  border-radius: 0px;
 }
 
 .main-p6-title-article-border3 {
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 26px;
-  padding-left: 0px;
-  border-radius: 0px;
-  height: 40px;
   width: 208px;
-  border-radius: 0px;
+  padding-bottom: 26px;
   overflow: hidden;
 }
 
-.main-p4-title-article-text3 { 
+.main-p6-title-article-text3 { 
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: left;
   color: #333333;
 }
 
 /*артикль 4*/ 
 .article-6-4 {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  border-radius: 0px;
-  height: 66px;
   width: 260px;
   overflow: hidden;
 }
@@ -1464,32 +1156,20 @@ overflow: hidden;
 .main-p6-content-p2-img4 {
   height: 36px;
   width: 36px;
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 16px;
-  padding-bottom: 32px;
-  padding-left: 0px;
-  border-radius: 0px;
+  margin-right: 16px;
 }
 
 .main-p6-title-article-border4 {
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 26px;
-  padding-left: 0px;
-  border-radius: 0px;
-  height: 40px;
   width: 208px;
-  border-radius: 0px;
+  padding-bottom: 26px;
   overflow: hidden;
 }
 
-.main-p4-title-article-text4 { 
+.main-p6-title-article-text4 { 
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: left;
   color: #333333;
 }
@@ -1497,49 +1177,35 @@ overflow: hidden;
 /*---------------------MAIN-p.7-------------------------------*/
 
 .main-p7 {
-  height: 478px;
-  width: 1440px;
-  border-radius: 0px;
-  margin: 0px 0px;
+  width: 100%;
+  max-width: 1440px;
   background: #FAF8F0;
   overflow: hidden;
 }
 
 .main-p7-content {
-  height: 278px;
   width: 1200px;
-  padding: 100px 120px;
-  border-radius: 0px;
+  margin: 100px 120px;
   overflow: hidden;
 }
 
 .main-p7-content-text {
-  height: 206px;
   width: 600px;
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 300px;
-  padding-bottom: 20px;
-  padding-left: 300px;
+  margin-bottom: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
   overflow: hidden;
 }
 
 .red-line-main-p7 {
   height: 8px;
   width: 42px;
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 279px;
-  padding-bottom: 30px;
-  padding-left: 279px;
+  margin-left: 278px;
+  margin-bottom: 28px;
 }
 
 .main-p7-title-border {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 34px;
-  padding-bottom: 12px;
-  padding-left: 34px;
+  margin-bottom: 12px;
   overflow: hidden;
 }
 
@@ -1548,14 +1214,11 @@ overflow: hidden;
   font-size: 32px;
   font-weight: 400;
   line-height: 36px;
-  letter-spacing: 0em;
   text-align: center;
   color: #52503B;
 }
 
 .main-p7-paragraph-border {
-  border-radius: 0px;
-  padding: 0px 0px;
   overflow: hidden;
 }
 
@@ -1564,101 +1227,77 @@ overflow: hidden;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: center;
   color: #52503B;
 }
 
 .main-p7-content-button {
-  border-radius: 0px;
-  padding-top: 0px;
-  padding-right: 16px;
-  padding-bottom: 0px;
-  padding-left: 16px;
+  width: 1168px;
+  margin-left: 16px;
   overflow: hidden;
 }
 
 .main-p7-button-contact {
-  border-radius: 6px;
-  font-family: Montserrat;
-  line-height: 20px;
-  letter-spacing: 0em;
-  text-align: center;
-  color:#52503B; 
-  border: none;
-  box-shadow: none;
-  cursor: pointer;
-  height: 52px;
   width: 116px;
-  background: #FAF8F0;
-  margin-top: 0px;
+  padding: 14px 6px;
   margin-right: 20px;
-  margin-bottom: 0px;
   margin-left: 450px;
-  padding-top: 1px;
-  padding-right: 6px;
-  padding-bottom: 1px;
-  padding-right: 6px;
-  }
-
-.main-p7-button-contact:hover {
-  background: red;
-}
-
-.main-p7-button-book {
-  border-radius: 6px;
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0em;
   text-align: center;
+  border-radius: 6px;
+  color:#52503B; 
+  box-shadow: none;
+  cursor: pointer;
+  background: #FAF8F0;
+  border-color: #52503B;
+}
+
+.main-p7-button-contact:hover {
+  background: red;
+}
+
+.main-p7-button-book {
+  width: 133px;  
+  padding: 16px 6px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 6px;
   color: #FFFFFF;
   border: none;
   box-shadow: none;
   cursor: pointer;
   background: #52503B; 
-  height: 52px;
-  width: 116px;
-  margin-top: 0px;
-  margin-right: 450px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  padding-top: 1px;
-  padding-right: 6px;
-  padding-bottom: 1px;
-  padding-right: 6px;
 }
 
 .main-p7-button-book:hover {
   background: red;
 }
 
-/*Повернутись до стилізації кнопок/
 
 /*---------------------FOOTER, поверутись до стилізації після вивчення теми по стилізації форм, значків-----------------------*/
 .footer {
-  height: 608px;
-  width: 1440px;
-  border-radius: 0px;
+  width: 100%;
+  max-width: 1440px;
   background: #52503B;
-  margin: 0px 0px;
   overflow: hidden;
 }
 
 .footer-content {
-  height: 408px;
   width: 1168px;
-  left: 136px;
-  border-radius: 0px;
   margin: 100px 136px;
   overflow: hidden;
 }
 
 .pages {
-  height: 200px;
   width: 280px;
-  border-radius: 0px;
+  margin-bottom: 48px;
   overflow: hidden;
 }
 
@@ -1682,7 +1321,8 @@ overflow: hidden;
 
 .footer-pages-menu li{
   color: #FFFFFF;
-  padding: 4px 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 /*стилізація посилань*/ 
@@ -1692,11 +1332,10 @@ overflow: hidden;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: left;
   text-decoration: none; 
   border-bottom: 1px solid transparent;
-  padding: 10px 0px;
+  padding: 6px 4px;
 }
 
 /*стилізація під то, щоб посилання "підсвічувалось" рисочкою, коли мишкою юзаєш рядом*/ 
@@ -1705,9 +1344,7 @@ overflow: hidden;
 }
 
 .social-media {
-  height: 200px;
   width: 280px;
-  border-radius: 0px;
   overflow: hidden;
 }
 
@@ -1721,36 +1358,68 @@ overflow: hidden;
   color: #FFFFFF;
 }
 
-.footer-social-media a{
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/ 
+.social-media-a {
   color: #FFFFFF;
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: left;
   text-decoration: none; 
   border-bottom: 1px solid transparent;
-  padding: 10px 0px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.footer-social-media-img {
+  height: 32px;
+  width: 32px;
 }
 
 .newsletter {
-  height: 200px;
   width: 576px;
-  border-radius: 0px;
+  margin-top: 14px;
   overflow: hidden;
 }
 
+.footer-form-title-border {
+  overflow: hidden;
+}
+
+.footer-form-title {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.footer-form-title-paragraph-border { 
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.footer-form-title-paragraph-text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px; 
+  text-align: left;
+  color: #FFFFFF;
+}
+
 .footer-bottom {
-  height: 160px;
   width: 1168px;
-  border-radius: 0px;
   overflow: hidden;
 }
 
 .footer-logo {
-  margin-top: 0px;
+  width: 200px;
   margin-bottom: 20px;
+  margin-left: 484px;
   overflow: hidden;
 }
 
@@ -1759,8 +1428,48 @@ overflow: hidden;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: center;
   color: #FFFFFF;
 }
 
+.footer-bottom-menu-all {
+  width: 1168px;
+  overflow: hidden;
+}
+
+.footer-bottom-menu {
+  width: 1168px; 
+  overflow: hidden;
+}
+
+.footer-bottom-menu a{
+  float: left;
+  overflow: hidden;
+}
+
+/*стилізація посилань*/ 
+.footer-bottom-menu a{
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none; /*прибираємо стилі що є за замовчуванням*/ 
+  border-bottom: 1px solid transparent; 
+  padding: 10px 6px;
+}
+
+/*стилізація під то, щоб посилання "підсвічувалось" рисочкою*/ 
+.footer-bottom-menu a:hover{
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.footer-bottom-menu-text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
