@@ -2,7 +2,7 @@
 /*-----------------------------Загальні стилі---------------------------------------*/ 
 body {
   font-family: 'Montserrat', sans-serif;
-  background:#FFFFFF;
+  background: #E5E5E5;
 }
 
 .clearfix {
@@ -30,18 +30,15 @@ body {
 
 /*-----------------------------HEADER---------------------------------------*/ 
 .header {
-  background: #52503B;
+  background-color: #52503B;
   width: 100%;
   max-width: 1440px;
-  border-radius: 0px;
   overflow: hidden;
 }
 
 .header-content {
   width: 1200px;
-  margin-right: 120px;
-  margin-left: 120px;
-  margin-bottom: 10px;
+  margin: 10px 120px;
   overflow: hidden;
 }
 
@@ -68,13 +65,12 @@ body {
 /*стилізація посилань*/ 
 .header-menu li a{
   color: #FFFFFF;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
   text-decoration: none; /*прибираємо стилі що є за замовчуванням*/ 
-  border-bottom: 1px solid transparent; 
+  border-bottom: 1px solid transparent; /*ця функція дублює функцію з hover-див. нижче пункт, за виключенням кольору, задля прибирання "подригування" елементів при наведенні*/ 
   padding: 10px 6px;
 }
 
@@ -84,28 +80,29 @@ body {
 }
 
 .header-button {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
+  font-style: normal;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  text-align: left;
+  text-align: center;
   border-radius: 6px;
   color: #52503B;
-  background: #FFFFFF;
-  padding: 12px 18px;
+  background-color: #FFFFFF;
+  width: 117px;
+  padding: 10px 11px;
   margin-top: 8px;
+  cursor: pointer;
+  border: 1px solid transparent;
 }
 
 .header-button:hover {
-  background: #FAF8F0;
+  background-color: #c1bc9e;
+  border: 1px solid brown;
 }
 
 /*-----------------------------MAIN---------------------------------------*/ 
-
 /*---------------------MAIN-p.1-------------------------------*/ 
-/*ЗВЕРТАЮ УВАГУ - так як картинка є фоном, на якому має розміщуватись текст (коли пройдемо відповідну тему) - 
-зараз блоки в частині MAIN-p.1 розміщені із зміщенням. Прошу НЕ оцінювати даний блок як остаточний!*/
-
 /*---------------------MAIN-p.1.1-------------------------------*/ 
 .main-p1 {
   width: 100%;
@@ -113,52 +110,58 @@ body {
   overflow: hidden;
 }
 
-.main-p1-img {
-  width: 100%;
-  max-width: 1440px;
+.main-p1-1 {
+  background-image: url(../images/Main-ok.png);
+  background-repeat: no-repeat; /*обовязково вказувати*/ 
+  padding-top: 168px;
+  padding-right: 120px;
+  padding-bottom: 248px;
+  padding-left: 120px;
+  background-size: contain; /*рекомендовано завжди вказувати*/ 
+  overflow: hidden;
 }
 
 .main-p1-content {
   width: 1200px;
-  margin: 248px 120px;
   overflow: hidden;
 }
 
-/*лого білого кольору, повернутись до стилізації після вставки картинки як фону*/ 
 .main-p1-1-logo {
   margin-left: 472px;
   width: 256px;
 }
 
 .main-p1-1-title {
-  margin-top: 38px;
+  margin-top: 34px;
   overflow: hidden;
 }
 
 .main-p1-1-second-title {
-  font-family: Montserrat;
+  font-style: normal;
   font-size: 48px;
   font-weight: 400;
   line-height: 53px;
+  letter-spacing: 0em;
   text-align: center;
-  color: #52503B; 
+  color: #FFFFFF; 
 }
 
 .main-p1-1-paragraph-border {
   padding-left: 454px;
   padding-right: 454px;
-  margin-top: 34px;
+  margin-top: 32px;
+  margin-bottom: 20px;
   overflow: hidden;
 }
 
 .main-p1-1-paragraph-text {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 2px;
   text-align: center;
-  color: #52503B; 
+  color: #FFFFFF; 
+  text-transform: uppercase;
 }
 
 /*---------------------MAIN-p.1.2-------------------------------*/ 
@@ -166,13 +169,13 @@ body {
 .main-p1-2-container {
   width: 100%;
   max-width: 1440px;
-  background:#FAF8F0;
+  background-color:#FAF8F0;
   overflow: hidden;
 }
 
 .main-p1-2-content {
   width: 800px;
-  margin: 100px 320px;
+  margin: 99px 320px;
   overflow: hidden;
 }
 
@@ -198,7 +201,6 @@ body {
 }
 
 .main-p1-2-paragraph-text {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -217,29 +219,25 @@ body {
 }
 
 .main-p1-button {
-  background:#52503B;
-  font-family: Montserrat;
+  width: 107px;
+  font-family: 'Montserrat';
+  font-style: normal;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #FFFFFF;
   text-align: center;
-  border: none;
-  box-shadow: none;
+  color: #FFFFFF;
+  background-color: #52503B;
   cursor: pointer;
-  width: 106px;
   border-radius: 6px;
-  padding-top: 10px;
-  padding-right: 6px;
-  padding-left: 6px;
-  padding-bottom: 10px;
+  padding: 10px 11px;
   margin-top: 40px;
+  border: 1px solid transparent;
 }
 
 .main-p1-button:hover {
-  background: red;
+  background-color: #7b785b;
+  border: 1px solid brown; 
 }
 
 /*---------------------MAIN-p.2-------------------------------*/
@@ -254,16 +252,16 @@ body {
 .main-p2-1-container {
   width: 100%;
   max-width: 1440px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
 .red-line-main-p2 {
   height: 8px;
   width: 42px;
-  padding-top: 100px;
-  padding-bottom: 32px;
-  padding-left: 698px;
+  margin-top: 99px;
+  margin-bottom: 32px;
+  margin-left: 698px;
 }
 
 .main-p2-1-title-border {
@@ -274,7 +272,6 @@ body {
 }
 
 .main-p2-1-first-title-text {
-  font-family: Montserrat;
   font-size: 96px;
   font-weight: 700;
   line-height: 96px;
@@ -282,15 +279,13 @@ body {
   color: #52503B;
 }
 
-.main-p2-2-container {
-  width: 100%;
-  max-width: 1440px;
-  overflow: hidden;
-}
 
-.main-p2-2-img {
-  width: 100%;
-  max-width: 1440px;
+.main-p2-2-container {
+  background-image: url(../images/Main-2.png);
+  background-repeat: no-repeat; /*обовязково вказувати*/ 
+  background-size: contain; /*рекомендовано завжди вказувати*/ 
+  height: 600px; /*вказую розміри, бо фоном є картинка і вона на весь розмір контейнера без контенту, тому немає до чого привязатись відступами*/ 
+  overflow: hidden;
 }
 
 /*---------------------MAIN-p.3-------------------------------*/ 
@@ -299,7 +294,7 @@ body {
 .main-p3 {
   width: 100%;
   max-width: 1440px;
-  background: #FAF8F0; 
+  background-color: #FAF8F0; 
   overflow: hidden;
 }
 
@@ -321,7 +316,7 @@ body {
 .red-line-main-p3 {
   height: 8px;
   width: 42px;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
   margin-left: 278px;
 }
 
@@ -333,7 +328,6 @@ body {
 }
 
 .main-p3-third-title-texte {
-  font-family: Montserrat;
   font-size: 32px;
   font-weight: 400;
   line-height: 36px;
@@ -346,7 +340,6 @@ body {
 }
 
 .main-p3-paragraph-text {
-  font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -380,7 +373,6 @@ body {
 }
 
 .main-p3-fourth-title-text1 {
-  font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -393,7 +385,6 @@ body {
 }
 
 .main-p3-2-paragraph-text1 {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -419,7 +410,6 @@ body {
 }
 
 .main-p3-fourth-title-text2 {
-  font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -432,7 +422,6 @@ body {
 }
 
 .main-p3-2-paragraph-text2 {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -457,7 +446,6 @@ body {
 }
 
 .main-p3-fourth-title-text3 {
-  font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -470,7 +458,6 @@ body {
 }
 
 .main-p3-2-paragraph-text3 {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -482,7 +469,7 @@ body {
 .main-p4 {
   width: 100%;
   max-width: 1440px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -502,7 +489,7 @@ body {
 .red-line-main-p4 {
   height: 8px;
   width: 42px;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
 }
 
 .main-p4-title-border {
@@ -512,7 +499,6 @@ body {
 }
 
 .main-p4-third-title-texte {
-  font-family: Montserrat;
   font-size: 32px;
   font-weight: 400;
   line-height: 36px;
@@ -525,7 +511,6 @@ body {
 }
 
 .main-p4-paragraph-text {
-  font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -565,7 +550,6 @@ body {
 }
 
 .main-p4-title-article-text1 {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -574,7 +558,6 @@ body {
 }
 
 .main-p4-title-article-paragraph {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -601,7 +584,6 @@ body {
 }
 
 .main-p4-title-article-text2 {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -629,7 +611,6 @@ body {
 }
 
 .main-p4-title-article-text3 {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -655,7 +636,6 @@ body {
 }
 
 .main-p4-title-article-text4 {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -687,7 +667,6 @@ body {
 }
 
 .main-p4-title-article-text5 {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -714,7 +693,6 @@ body {
 }
 
 .main-p4-title-article-text6 {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -741,7 +719,6 @@ body {
 }
 
 .main-p4-title-article-text7 {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -767,7 +744,6 @@ body {
 }
 
 .main-p4-title-article-text8 {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -779,7 +755,7 @@ body {
 .main-p5 {
   width: 100%;
   max-width: 1440px;
-  background: #FAF8F0;
+  background-color: #FAF8F0;
   overflow: hidden;
 }
 
@@ -817,7 +793,6 @@ body {
 }
 
 .main-p5-third-title-texte {
-  font-family: Montserrat;
   font-size: 32px;
   font-weight: 400;
   line-height: 36px;
@@ -831,7 +806,6 @@ body {
 }
 
 .main-p5-paragraph-text {
-  font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -849,11 +823,13 @@ body {
 /*артикль 1*/ 
 .article-5-1 {
   width: 524px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   padding: 30px;
   margin-right: 20px;
   margin-left: 16px;
   overflow: hidden;
+  border: 2px solid rgba(82, 80, 59, 0.1);
+  border-radius: 4px;
 }
 
 .main-p5-title-article-border1 {
@@ -863,12 +839,12 @@ body {
 }
 
 .main-p5-title-article-text1 {
-  font-family: Montserrat;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  color: #52503B;
+  color: #333333;
+  ;
 }
 
 .main-p5-paragraph-article-border1 {
@@ -878,30 +854,32 @@ body {
 }
 
 .main-p5-paragraph-article-text1 {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   text-align: left;
-  color: #52503B;
+  color: #333333;
 }
 
 .main-p5-paragraph2-article-text1 {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   text-align: left;
-  color: #52503B;
+  color: #333333;
+  ;
 }
 
 /*артикль 2*/ 
 .article-5-2 {
   width: 524px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   padding: 30px;
   margin-right: 20px;
+  border: 2px solid rgba(82, 80, 59, 0.1);
+  border-radius: 4px;
   overflow: hidden;
+
 }
 
 .main-p5-title-article-border2 {
@@ -911,12 +889,12 @@ body {
 }
 
 .main-p5-title-article-text2 {
-  font-family: Montserrat;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  color: #52503B;
+  color: #333333;
+  ;
 }
 
 .main-p5-paragraph-article-border2 {
@@ -926,28 +904,30 @@ body {
 }
 
 .main-p5-paragraph-article-text2 {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   text-align: left;
-  color: #52503B;
+  color: #333333;
+  ;
 }
 
 .main-p5-paragraph2-article-text2 {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   text-align: left;
-  color: #52503B;
+  color: #333333;
+  ;
 }
 
 /*артикль 3*/ 
 .article-5-3 {
   width: 524px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   padding: 30px;
+  border: 2px solid rgba(82, 80, 59, 0.1);
+  border-radius: 4px;
   overflow: hidden;
 }
 
@@ -958,12 +938,11 @@ body {
 }
 
 .main-p5-title-article-text3 {
-  font-family: Montserrat;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  color: #52503B;
+  color: #333333;
 }
 
 .main-p5-paragraph-article-border3 {
@@ -973,21 +952,19 @@ body {
 }
 
 .main-p5-paragraph-article-text3 {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   text-align: left;
-  color: #52503B;
+  color: #333333;
 }
 
 .main-p5-paragraph2-article-text3 {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   text-align: left;
-  color: #52503B;
+  color: #333333;
 }
 
 /*---------------------MAIN-p.6-------------------------------*/
@@ -999,15 +976,17 @@ body {
 }
 
 .main-p6-1-container {
-  width: 100%;
-  max-width: 1440px;
+  background-image: url(../images/img-for-come-together-ok.jpg);
+  background-repeat: no-repeat; /*обовязково вказувати*/ 
+  background-size: contain; /*рекомендовано завжди вказувати*/ 
+  height: 600px; /*помітка для мене - вказала тільки висоту за рекомендацією Олексія*/ 
   overflow: hidden;
 }
 
 .main-p6-2-container {
   width: 100%;
   max-width: 1440px;
-  background:#FFFFFF;
+  background-color:#FFFFFF;
   overflow: hidden;
 }
 
@@ -1036,7 +1015,6 @@ body {
 }
 
 .main-p6-third-title-texte {
-  font-family: Montserrat;
   font-size: 32px;
   font-weight: 400;
   line-height: 36px;
@@ -1050,7 +1028,6 @@ body {
 }
 
 .main-p6-paragraph-text {
-  font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1061,6 +1038,7 @@ body {
 /*артиклі*/ 
 .main-p6-2-content-article {
   width: 552px;
+  margin-left: 10px;
   overflow: hidden;
 }
 
@@ -1074,7 +1052,6 @@ body {
 .main-p6-content-p2-img1 {
   height: 36px;
   width: 36px;
-  padding-right: 16px;
 }
 
 .main-p6-title-article-border1 {
@@ -1084,10 +1061,10 @@ body {
 }
 
 .main-p6-title-article-text1 { 
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  font-style: normal;
   text-align: left;
   color: #333333;
 }
@@ -1101,7 +1078,6 @@ body {
 .main-p6-content-p2-img2 {
   height: 36px;
   width: 36px;
-  padding-right: 16px;
 }
 
 .main-p6-title-article-border2 {
@@ -1111,10 +1087,10 @@ body {
 }
 
 .main-p6-title-article-text2 { 
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  font-style: normal;
   text-align: left;
   color: #333333;
 }
@@ -1129,7 +1105,6 @@ body {
 .main-p6-content-p2-img3 {
   height: 36px;
   width: 36px;
-  padding-right: 16px;
 }
 
 .main-p6-title-article-border3 {
@@ -1139,11 +1114,11 @@ body {
 }
 
 .main-p6-title-article-text3 { 
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   text-align: left;
+  font-style: normal;
   color: #333333;
 }
 
@@ -1156,7 +1131,6 @@ body {
 .main-p6-content-p2-img4 {
   height: 36px;
   width: 36px;
-  margin-right: 16px;
 }
 
 .main-p6-title-article-border4 {
@@ -1166,10 +1140,10 @@ body {
 }
 
 .main-p6-title-article-text4 { 
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  font-style: normal;
   text-align: left;
   color: #333333;
 }
@@ -1179,7 +1153,7 @@ body {
 .main-p7 {
   width: 100%;
   max-width: 1440px;
-  background: #FAF8F0;
+  background-color: #FAF8F0;
   overflow: hidden;
 }
 
@@ -1210,7 +1184,6 @@ body {
 }
 
 .main-p7-third-title-texte {
-  font-family: Montserrat;
   font-size: 32px;
   font-weight: 400;
   line-height: 36px;
@@ -1223,7 +1196,6 @@ body {
 }
 
 .main-p7-paragraph-text {
-  font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1238,46 +1210,49 @@ body {
 }
 
 .main-p7-button-contact {
-  width: 116px;
-  padding: 14px 6px;
-  margin-right: 20px;
-  margin-left: 450px;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
+  font-style: normal;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: center;
-  border-radius: 6px;
-  color:#52503B; 
-  box-shadow: none;
+  color: #52503B;
+  width: 116px;
+  padding: 12px 6px;
+  margin-right: 20px;
+  margin-left: 450px;
   cursor: pointer;
-  background: #FAF8F0;
+  background-color: #FAF8F0;
   border-color: #52503B;
+  border-width: 4px; /*в макеті відсутня інформація, тому підбирала розмір візуально*/ 
+  border-radius: 6px;
 }
 
 .main-p7-button-contact:hover {
-  background: red;
+  background-color: #d9d4c0;
 }
 
 .main-p7-button-book {
-  width: 133px;  
-  padding: 16px 6px;
-  font-family: Montserrat;
+  width: 133px;
+  font-family: 'Montserrat';
+  font-style: normal;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-align: center;
   border-radius: 6px;
+  padding: 15px 15px;
   color: #FFFFFF;
   border: none;
-  box-shadow: none;
   cursor: pointer;
-  background: #52503B; 
+  box-shadow: none;
+  background-color: #52503B; 
+  border: 1px solid transparent;
 }
 
 .main-p7-button-book:hover {
-  background: red;
+  background-color: #7b785b;
+  border: 1px solid brown;
 }
 
 
@@ -1285,7 +1260,7 @@ body {
 .footer {
   width: 100%;
   max-width: 1440px;
-  background: #52503B;
+  background-color: #52503B;
   overflow: hidden;
 }
 
@@ -1302,12 +1277,13 @@ body {
 }
 
 .footer-pages-title { 
-  font-family: Montserrat;
+  font-style: normal;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 2px;
   text-align: left;
+  text-transform: uppercase;
   color: #FFFFFF;
 }
 
@@ -1328,7 +1304,7 @@ body {
 /*стилізація посилань*/ 
 .footer-pages-menu li a{
   color: #FFFFFF;
-  font-family: Montserrat;
+  font-style: normal;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1348,19 +1324,31 @@ body {
   overflow: hidden;
 }
 
+.footer-social-media-menu {
+  overflow: hidden;
+}
+
+.footer-social-media-menu ul{
+  overflow: hidden;
+}
+
+.footer-social-media-menu li{
+  color: #FFFFFF;
+}
+
 .footer-social-media-title {
-  font-family: Montserrat;
+  font-style: normal; 
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 2px;
   text-align: left;
+  text-transform: uppercase; 
   color: #FFFFFF;
 }
 
 .social-media-a {
   color: #FFFFFF;
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1369,6 +1357,11 @@ body {
   border-bottom: 1px solid transparent;
   padding-top: 4px;
   padding-bottom: 4px;
+  margin-right: 6px;
+}
+
+.social-media-a:hover{
+  border-bottom: 1px solid #FFFFFF;
 }
 
 .footer-social-media-img {
@@ -1387,12 +1380,13 @@ body {
 }
 
 .footer-form-title {
-  font-family: Montserrat;
+  font-style: normal; 
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 2px;
   text-align: left;
+  text-transform: uppercase; 
   color: #FFFFFF;
 }
 
@@ -1402,7 +1396,6 @@ body {
 }
 
 .footer-form-title-paragraph-text {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px; 
@@ -1423,7 +1416,6 @@ body {
 }
 
 .footer-bottom-paragraph {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1449,7 +1441,6 @@ body {
 /*стилізація посилань*/ 
 .footer-bottom-menu a{
   color: #FFFFFF;
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1465,10 +1456,11 @@ body {
 }
 
 .footer-bottom-menu-text {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   text-align: center;
   color: #FFFFFF;
 }
+
+

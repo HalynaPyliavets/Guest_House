@@ -67,21 +67,19 @@
   <main>
     <div class="container"> 
       <section>  <!--Main-p.1-->
-        <!--застилізувати р.1.1 після того, як картинка буде виконана як фон і буде можливість на картинку посадити контент, власне тоді ж уточнити блоки, відстані!!!!-->
-        <div class="main-p1"> 
+        <div class="main-p1"> <!--Сторінка р.1 поділяється на 2 частини (1-ша з картинкою-фоном, 2-га з текстом та кнопочкою)-->
           <div class="main-p1-1">
-            <img src="./images/Main.png" alt="Main" class="main-p1-img"> <!--Це основна картинка, розмістити написи на картинці через стилі-->
             <div class="main-p1-content">
-            <a href="./index.html" class="main-p1-1-logo"> <!--Logo-main, білого кольору-->
-              <img src="./images/logo-big-for-main.svg" alt="GuestHouse">
-            </a>
-            <div class="main-p1-1-title">
-              <h2 class="main-p1-1-second-title">Experience the perfect combination of modern housing & natural scenery.</h2>
-            </div>
+              <a href="./index.html" class="main-p1-1-logo"> <!--Logo-main, білого кольору-->
+                <img src="./images/logo-big-for-main.svg" alt="GuestHouse">
+              </a>
+              <div class="main-p1-1-title">
+                <h2 class="main-p1-1-second-title">Experience the perfect combination of modern housing & natural scenery.</h2>
+              </div>
             
-            <div class="main-p1-1-paragraph-border">
-              <p class="main-p1-1-paragraph-text">Located in Lofoten, norway</p> <!--тут необхідно стилізувати текст через CAPSLock--> 
-            </div>
+              <div class="main-p1-1-paragraph-border">
+                <p class="main-p1-1-paragraph-text">Located in Lofoten, norway</p> <!--тут необхідно стилізувати текст через CAPSLock--> 
+              </div>
             
             </div>
             <!--тут має бути декоративна кнопочка, застилізувати її коли дійдемо до вивчення необхідної теми-->
@@ -133,9 +131,7 @@
                 The Guest House is the perfect weekend getaway cabin.</h1>
             </div>
           </div>
-          <div class="main-p2-2-container"> <!--img-->
-            <img src="./images/Main-2.png" alt="Guest-House-Main-2" class="main-p2-2-img">
-          </div>
+          <div class="main-p2-2-container"></div> <!--картинка-фон-->
         </div>
         
       </section>
@@ -417,10 +413,7 @@
   
       <section> <!--Main-p.6-Come together-->
         <div class="main-p6">
-          <div class="main-p6-1-container"> <!--img-->
-            <img src="./images/img-for-come-together-ok.jpg" alt="come-together">
-          </div>
-    
+          <div class="main-p6-1-container"></div>
           <div class="main-p6-2-container"> <!--text-->
             <div class="main-p6-2-content"> <!--На макеті контент контейнера знаходиться в блоці, тому виникає блок div--> 
               <div class="main-p6-2-content-text fl">
@@ -510,7 +503,7 @@
       <div class="footer">
         <div class="footer-content">
           <div class="pages fl"> <!--Pages-->
-            <h3 class="footer-pages-title">PAGES</h3> <!--примінила CapsLock, необхідно уточнити по стилям-->
+            <h3 class="footer-pages-title">pages</h3> 
             <nav class="footer-pages-menu fl">
               <ul>
                 <li><a href="./index.html" title="Go to Start">Start</a></li>
@@ -525,21 +518,31 @@
         
             <div class="social-media fl"> <!--Social Media-->
               <h3 class="footer-social-media-title">Social Media</h3>
-              <a href="./index.html" class="social-media-a">
-                <img src="./images/SocialMedia.png" alt="SocialMedia" class="footer-social-media-img">
-              </a> 
-              <a href="./index.html" class="social-media-a">
-                <img src="./images/SocialMedia-fb.png" alt="SocialMedia-fb" class="footer-social-media-img">
-              </a> 
-              <a href="./index.html" class="social-media-a">
-                <img src="./images/SocialMedia-insta.png" alt="SocialMedia-insta" class="footer-social-media-img">
-              </a> 
+              <nav class="footer-social-media-menu">
+                <ul>
+                  <li>
+                    <a href="./index.html" class="social-media-a fl">
+                      <img src="./images/SocialMedia.png" alt="SocialMedia" class="footer-social-media-img">
+                    </a> 
+                  </li>
+                  <li>
+                    <a href="./index.html" class="social-media-a fl">
+                      <img src="./images/SocialMedia-fb.png" alt="SocialMedia-fb" class="footer-social-media-img">
+                    </a> 
+                  </li>
+                  <li>
+                    <a href="./index.html" class="social-media-a fl">
+                      <img src="./images/SocialMedia-insta.png" alt="SocialMedia-insta" class="footer-social-media-img">
+                    </a> 
+                  </li>
+                </ul>
+              </nav>
             </div>
     
             <div class="newsletter"> <!--Newsletter-->
               <form action="https://fom.in.ua/echo" method="POST" name="Newsletter"> <!--стилізація форми, повернутись після вивчення даної теми-->
                 <div class="footer-form-title-border">
-                  <h4 class="footer-form-title">NEWSLETTER</h4> <!--уточнити через стилі GapsLock-->
+                  <h4 class="footer-form-title">newsletter</h4> 
                 </div>
                 <div class="footer-form-title-paragraph-border">
                   <p class="footer-form-title-paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
