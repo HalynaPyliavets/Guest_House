@@ -37,7 +37,8 @@ body {
 }
 
 .header-content {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 10px 120px;
   overflow: hidden;
 }
