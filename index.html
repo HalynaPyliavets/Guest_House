@@ -5,328 +5,660 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="My sixth site"> 
-  <meta http-equiv="refresh" content="30"> 
-  <meta name="keywords" content="home work, site layout">
-  <meta name="robots" content="index, follow"> 
+  <meta name="description" content="The Guest House, Norwegian archipelago, Lofoten"> 
+  <meta name="keywords" content="The Guest House, Norwegian archipelago, Lofoten"> 
   <meta name="autor" content="Halyna Pyliavets"> 
-  <title>HTML - site layout</title>
+  <title>The Guest House - the perfect combination of modern housing&natural scenery</title>
 
-  <link rel="stylesheet" href="./style/custom.css"> <!--Пов'язані стилі - спосіб підключення цих стилів-->
+  <link rel="apple-touch-icon" sizes="76x76" href="./images/GuestHouse_favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/GuestHouse_favicon.svg">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/GuestHouse_favicon.svg">
 
-  <!--Через тег style прям тут - у хедері. Глобальні стилі (критикал стилі) - 
-      При використанні глобальних стилів властивості CSS описуються в самому документі 
-      та розміщуються в заголовку веб-сторінки, коли відкривається головна сторінка - 
-      щоб на ній вже були стилі, поки інша частина ще грузиться--> 
+  <link rel="mask-icon" href="./images/GuestHouse_favicon.svg" color="#fff">
+
+  <meta name="og:url" content="./index.html"/> <!--Domain site url - потім вказати адресу сайту-->
+  <meta name="og:title" content="The Guest House"/>
+  <meta name="og:description" content="The Guest House website"/>
+  <meta name="og:type" content="article"/>
+  <meta name="og:image" content="./images/Main.png"/> <!--основна картинка сайту-->
+  <meta property="og:image:width" content="350"/>
+  <meta property="og:image:height" content="200"/>
+  <meta property="og:image:alt" content="selector"/>
+
+  <!-- CSS only (підключення Bootstrap) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./style/reset.css"> <!--зкидання всіх налаштувань браузера, завдяки цьому можна розпочати стилізацію як з чистого листа, йде першим у списку посилань-->
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!--підключення шрифтів, що є вільними в доступі в GoogleFonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./style/custom.css"> <!--підключення стилів, йде обовязково після зкидання стилів reset, а не до них; за рекомендацією В'ячеслава прописано після підключенням шрифтів-->
+
+  <!--підключення карусельки (сайт Slick) - слайдера  по абсолютному посиланню-->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> 
+  <!--переключателі слайдерів стали по бокам слайдера та перетворились на кнопочки (стрілочки)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://kit.fontawesome.com/7a5962ab48.js" crossorigin="anonymous"></script>
   
 </head>
 
 <body> 
   <!--HEADER-->
-  <header>
-    <!--Зробити темно-сіро-коричевий фон хеадера з допомогою CSS-->
-      
-    <div> 
-    <!--Згідно макету фон на всю ширину, а лого, гавігація та кнопка в своєму контейнері, тому зарнула в div-->
-      <a href="#">
-        <img src="./images/logo-small-for-header.png" alt="logo-small-for-header">
-        <!--Лого білого кольору-->
-      </a>
+  <header> <!--АДАПТИВНЕ меню header-nav із bootstrap на флексах-->
+    <div class="general-container">  <!--типовий контейнер для всіх глобальних частин сайту із шириною, центруванням-->
+      <nav class="header navbar navbar-expand-lg">
+        <div class="header-content container-fluid">
+          <a href="./index.html" class="header-logo">
+            <img src="./images/logo-small-for-header.svg" alt="GuestHouse">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="header-nav navbar-nav me-auto mb-2 mb-lg-0">
+              <li><a href="./index.html" title="Go to Start">Start</a></li>
+              <li><a href="./pages/contact.html" title="Go to Contact">Contact</a></li>
+              <li><a href="./pages/our-history.html" title="Go to Our history">Our history</a></li>
+            </ul>
             
-      <!--Nav-->
-      <nav>
-        <ul>
-          <li><a href="./index.html" title="Go to Start">Start</a></li>
-          <li><a href="./pages/contact.html" title="Go to Contact">Contact</a></li>
-          <li><a href="./pages/our-history.html" title="Go to Our history">Our history</a></li>
-        </ul>
+            <button class="header-button" title="Go to Book now"> 
+              Book now
+            </button>
+
+          </div>
+        </div>
       </nav>
-      
-      <button title="Go to Book now">
-        Book now
-      </button>
     </div>
-    
   </header>
 
   <!--MAIN-->
   <main>
-    <section> <!--Main-page-p.1-->
-      <div> <!--img-->
-        <img src="./images/Main.png" alt="Main"> <!--Це основна картинка, розмістити написи на картинці через стилі-->
-        <a href="#">
-          <!--Logo-big-->
-          <img src="./images/logo-big-for-main.png" alt="logo-big-for-main">
-          <!--Лого білого кольору-->
-        </a>
+    <div class="general-container"> 
+      <section>  <!--Main-p.1-->
+        <div class="main-p1"> <!--Сторінка р.1 поділяється на 2 частини (1-ша з картинкою-фоном, 2-га з текстом та кнопочкою)-->
+          <div class="main-p1-1">
+            <div class="main-p1-content">
+              <a href="./index.html" class="main-p1-1-logo"> <!--Logo-main, білого кольору-->
+                <img src="./images/logo-big-for-main.svg" alt="GuestHouse">
+              </a>
+              <div class="main-p1-1-title">
+                <h2 class="main-p1-1-second-title">Experience the perfect combination of modern housing & natural scenery.</h2>
+              </div>
+            
+              <div class="main-p1-1-paragraph-border">
+                <p class="main-p1-1-paragraph-text">Located in Lofoten, norway</p> <!--тут необхідно стилізувати текст через CAPSLock--> 
+              </div>
+            
+            </div>
+          </div>
+          
+          <div class="main-p1-2-container"> <!--text, p.1-2--> 
+          <div class="main-p1-2-content"> <!--На макеті контент контейнера знаходиться в блоці, тому виникає блок div-->
+            <img src="./images/Line.png" alt="Line" class="red-line-main-p1"> <!--Зробила лінію картинкою (поки так)-->
+            <div class="main-p1-2-content-p">
+              <div class="main-p1-2-content-p-left fl">
+                <div class="main-p1-2-paragraph-left-border">
+                  <p class="main-p1-2-paragraph-text"> 
+                    The Guest House is the perfect weekend get-away housing. 
+                    Located in the Norwegian archipelago, Lofoten, it's a great
+                    escape from the hustle and bustle of the city. Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. 
+                    Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus
+                    congue et, vulputate ut ligula.
+                  </p>
+                </div>
+              </div>
+  
+              <div class="main-p1-2-content-p-right fr">
+                <div class="main-p1-2-paragraph-right-border">
+                  <p class="main-p1-2-paragraph-text fl"> 
+                    Below you'll find information about the accommodation and what's included in the price. 
+                    Don't hesitate to reach out to us vi the contact page if you have any questions around your stay.
+                  </p>
+                </div>
+                    
+                <button class="main-p1-button fl" title="Go to Book now"> 
+                  Book now
+                </button>
+              </div>
+            </div>
+            
+
+          </div>
+          </div>  
+        </div> 
+      </section>
+  
+      <section> <!--Main-p.2-title-->
+        <div class="main-p2"> 
+          <div class="main-p2-1-container"> <!--text-->
+            <img src="./images/Line.png" alt="Line" class="red-line-main-p2"> 
+            <div class="main-p2-1-title-border">
+              <h1 class="main-p2-1-first-title-text">
+                The Guest House is the perfect weekend getaway cabin.</h1>
+            </div>
+          </div>
+
+          <div class="main-p2-2-container"></div> 
         
-        <h2 class="primary-title">Experience the perfect combination of modern housing & natural scenery.</h2>
-        <p>Located in Lofoten, norway</p> <!--тут необхідно стилізувати текст через CAPSLock--> 
-
-        <!--тут має бути якась дивна кнопочка, її напевно через стилі необхідно виготовити-->
-      </div>
-
-      <div> <!--text-->
-        <!--Зробити сірий фон з допомогою CSS--> 
-        <div> <!--Фон на всю ширину та весь контейнер, а сам текст - ні, тому загорнула в div-->
-          <img src="./images/Line.png" alt="Line"> <!--Зробила лінію картинкою (поки так)-->
-
-          <div>
-            <p>
-            The Guest House is the perfect weekend get-away housing. 
-            Located in the Norwegian archipelago, Lofoten, it's a great
-            escape from the hustle and bustle of the city. Lorem ipsum dolor sit amet, 
-            consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. 
-            Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus
-            congue et, vulputate ut ligula.
-            </p>
-          </div>
-
-          <div>
-            <p>
-            Below you'll find information about the accommodation and what's included in the price. 
-            Don't hesitate to reach out to us vi the contact page if you have any questions around your stay.
-            </p>
-          </div>
-
-          <div> <!--зробила через контейнер, щоб розмістити правильно в майбутньому через стилі-->
-            <button title="Go to Book now">
-              Book now
-            </button>
-          </div>
-
         </div>
-      </div>    
-    </section>
-
-    <section> <!--Main-page-p.2-title-->
-      <div> <!--text-->
-      <!--Зробити білий фон з допомогою CSS-->
-        <div> <!--Фон на всю ширину та весь контейнер, а сам текст - ні, тому зарнула в div-->
-          <img src="./images/Line.png" alt="Line"> <!--Зробила лінію картинкою (поки так)-->
-          <div>
-            <h1>
-              The Guest House is the perfect weekend getaway cabin.
-            </h1>
-          </div> 
-        </div>            
-      </div>
-
-      <div> <!--img-->
-        <img src="./images/Main-2.png" alt="Main-2">
-      </div>
-    </section>
-
-    <section> <!--Main-page-p.3-sleeping arrangements--> 
-      <div> <!--Зробити сірий фон з допомогою CSS--> 
-        <div> <!--Фон на всю ширину та весь контейнер, а сам текст - ні, тому зарнула в div-->
-          <img src="./images/Line.png" alt="Line">
-          <h3>Sleeping arrangements.</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus
-            feugiat eros quis consectetur.
-          </p>
-          
-          <!--1-->
-          <article>
-            <img src="./images/beds.png" alt="beds">
-            <h4>Beds</h4>
-            <p>
-              The cabin is equipped with 12 beds, 4 of which are in bunk.
-              The rent includes linens for all beds.
-            </p>
-          </article>
-          
-          <!--2-->
-          <article>
-            <img src="./images/bedrooms.png" alt="bedrooms">
-            <h4>Bedrooms</h4>
-            <p>
-              Spread out over two floors, the cabin offers 4 bedrooms.
-              Ranging from 2 to 4 beds per room.
-            </p>
-          </article>
-          
-          <!--3-->
-          <article>
-            <img src="./images/bathrooms.png" alt="bedrooms">
-            <h4>Bathrooms</h4>
-            <p>
-              The cabin has three bathrooms, all equipped with showers and one with a bath tub.
-            </p>
-          </article>
+        
+      </section>
+  
+      <section> <!--Main-p.3-sleeping arrangements--> 
+        <div class="main-p3"> 
+          <div class="main-p3-content"> <!--На макеті контент контейнера знаходиться в блоці, тому виникає блок div-->
+            <div class="main-p3-content-p1">
+              <img src="./images/Line.png" alt="Line" class="red-line-main-p3">
+              <div class="main-p3-title-border">
+                <h3 class="main-p3-third-title-texte">Sleeping arrangements.</h3>
+              </div>
+              <div class="main-p3-paragraph-border">
+                <p class="main-p3-paragraph-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus
+                  feugiat eros quis consectetur.
+                </p>
+              </div>
+            </div>
+            <div class="main-p3-content-p2">
+              <!--1-->
+              <article class="article-1 fl">
+                <img src="./images/beds.png" alt="beds" class="main-p3-content-p2-img1">
+                <div class="main-p3-title-border1">
+                  <h4 class="main-p3-fourth-title-text1">Beds</h4>
+                </div>
+                <div class="main-p3-2-paragraph-border1">
+                  <p class="main-p3-2-paragraph-text1">
+                    The cabin is equipped with 12 beds, 4 of which are in bunk.
+                    The rent includes linens for all beds.
+                  </p>
+                </div>
+              </article>
+              
+              <!--2-->
+              <article class="article-2 fl">
+                <img src="./images/bedrooms.png" alt="bedrooms" class="main-p3-content-p2-img2">
+                <div class="main-p3-title-border2">
+                  <h4 class="main-p3-fourth-title-text2">Bedrooms</h4>
+                </div>
+                <div class="main-p3-2-paragraph-border2">
+                  <p class="main-p3-2-paragraph-text2">
+                    Spread out over two floors, the cabin offers 4 bedrooms.
+                    Ranging from 2 to 4 beds per room.
+                  </p>
+                </div>
+              </article>
+              
+              <!--3-->
+              <article class="article-3 fl">
+                <img src="./images/bathrooms.png" alt="bedrooms" class="main-p3-content-p2-img3">
+                <div class="main-p3-title-border3">
+                  <h4 class="main-p3-fourth-title-text3">Bathrooms</h4>
+                </div>
+                <div class="main-p3-2-paragraph-border3">
+                  <p class="main-p3-2-paragraph-text3">
+                    The cabin has three bathrooms, all equipped with showers and one with a bath tub.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section> <!--Main-page-p.4-perfect escape.-->
-      <div>
-        <!--Зробити сірий фон з допомогою CSS-->
-        <div>
-          <!--Фон на всю ширину та весь контейнер, а сам текст - ні, тому зарнула в div-->
-          <img src="./images/Line.png" alt="Line">
-          <h3>The perfect escape.</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus
-            feugiat eros quis consectetur.
-          </p>
-    
-          <!--1-->
-          <article>
-            <img src="./images/Kitchen.png" alt="Kitchen">
-            <h4>Modern Kitchen Appliances.</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-          </article>
-    
-          <!--2-->
-          <article>
-            <img src="./images/Paths.png" alt="Paths">
-            <h4>Outdoor Paths</h4>
-            <p>
-              Nulla rhoncus feugiat eros quis consectetur.
-            </p>
-          </article>
-    
-          <!--3-->
-          <article>
-            <img src="./images/Coffee-Maker.png" alt="Coffee-Maker">
-            <h4>Coffee Maker</h4>
-            <p>
-              Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices,
-              ut faucibus orci tincidunt.
-            </p>
-          </article>
-
-          <!--4-->
-          <article>
-            <img src="./images/Natural-Scenery.png" alt="Natural-Scenery">
-            <h4>Natural Scenery</h4>
-            <p>
-              Cras commodo consequat orci, in convallis risus egestas non.
-            </p>
-          </article>
-
-          <!--5-->
-          <article>
-            <img src="./images/Air-Conditioner.png" alt="Air-Conditioner">
-            <h4>Air Conditioner.</h4>
-            <p>
-              Nullam scelerisque aliquam odio et faucibus.
-            </p>
-          </article>
+      </section>
+  
+      <section> <!--Main-p.4-perfect escape.-->
+        <div class="main-p4">
+          <div class="main-p4-content"> <!--На макеті контент контейнера знаходиться в блоці, тому виникає блок div-->
+            <div class="main-p4-content-p1">
+              <img src="./images/Line.png" alt="Line" class="red-line-main-p4">
+              <div class="main-p4-title-border">
+                <h3 class="main-p4-third-title-texte">The perfect escape.</h3>
+              </div>
+              <div class="main-p4-paragraph-border">
+                <p class="main-p4-paragraph-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus
+                feugiat eros quis consectetur.
+                </p>
+              </div>
+            </div>
+      
+            <div class="main-p4-content-p2">
+              <div class="main-p4-content-p2-1 fl"> <!--ліва частина артиклів-->
+                <!--1-->
+                <article class="article-4-1">
+                  <img src="./images/Kitchen.png" alt="Kitchen" class="main-p4-content-p2-img1 fl">
+                  <div class="main-p4-title-article-border1 fl">
+                    <h4 class="main-p4-title-article-text1">
+                      Modern Kitchen Appliances.</h4>
+                    <p class="main-p4-title-article-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </article>
           
-          <!--6-->
-          <article>
-            <img src="./images/Storage-Solutions.png" alt="Storage-Solutions">
-            <h4>Storage Solutions</h4>
-            <p>
-              Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.
-            </p>
-          </article>
+                <!--2-->
+                <article class="article-4-2">
+                  <img src="./images/Paths.png" alt="Paths" class="main-p4-content-p2-img2 fl">
+                  <div class="main-p4-title-article-border2 fl">
+                    <h4 class="main-p4-title-article-text2">Outdoor Paths.</h4>
+                      <p class="main-p4-title-article-paragraph">Nulla rhoncus feugiat eros quis consectetur.</p>
+                  </div>
+                  
+                </article>
           
-          <!--7-->
-          <article>
-            <img src="./images/Cutlery-Selection.png" alt="Cutlery-Selection">
-            <h4>Cutlery Selection</h4>
-            <p>
-              Duis tristique sed lorem a vestibulum.
-            </p>
-          </article>
-          
-          <!--8-->
-          <article>
-            <img src="./images/Take-away-Options.png" alt="Take-away-Options">
-            <h4>Take-away Options</h4>
-            <p>
-              Nulla efficitur auctor hendrerit. Etiam ut orci varius, 
-              faucibus libero ac, cursus quam.
-            </p>
-          </article>
+                <!--3-->
+                <article class="article-4-3">
+                  <img src="./images/Coffee-Maker.png" alt="Coffee-Maker" class="main-p4-content-p2-img3 fl">
+                  <div class="main-p4-title-article-border3 fl">
+                    <h4 class="main-p4-title-article-text3"> Coffee Maker.</h4>
+                    <p class="main-p4-title-article-paragraph">
+                      Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
+                    </p>
+                  </div>
+                  
+                </article>
+      
+                <!--4-->
+                <article class="article-4-4">
+                  <img src="./images/Natural-Scenery.png" alt="Natural-Scenery" class="main-p4-content-p2-img4 fl">
+                  <div class="main-p4-title-article-border4 fl">
+                    <h4 class="main-p4-title-article-text4">Natural Scenery.</h4>
+                    <p class="main-p4-title-article-paragraph">
+                      Cras commodo consequat orci, in convallis risus egestas non.
+                    </p>
+                  </div> 
+                </article>
+              </div>
 
+              <div class="main-p4-content-p2-2 fr"> <!--права частина артиклів--> 
+                <!--5-->
+                <article class="article-4-5">
+                  <img src="./images/Air-Conditioner.png" alt="Air-Conditioner" class="main-p4-content-p2-img5 fl">
+                  <div class="main-p4-title-article-border5 fl">
+                    <h4 class="main-p4-title-article-text5">Air Conditioner.</h4>
+                    <p class="main-p4-title-article-paragraph">
+                      Nullam scelerisque aliquam odio et faucibus.
+                    </p>
+                  </div> 
+                </article>
+                
+                <!--6-->
+                <article class="article-4-6">
+                  <img src="./images/Storage-Solutions.png" alt="Storage-Solutions" class="main-p4-content-p2-img6 fl">
+                  <div class="main-p4-title-article-border6 fl">
+                    <h4 class="main-p4-title-article-text6">Storage Solutions.</h4>
+                    <p class="main-p4-title-article-paragraph">
+                      Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. 
+                    </p>
+                  </div>
+                </article>
+                
+                <!--7-->
+                <article class="article-4-7">
+                  <img src="./images/Cutlery-Selection.png" alt="Cutlery-Selection" class="main-p4-content-p2-img7 fl">
+                  <div class="main-p4-title-article-border7 fl">
+                    <h4 class="main-p4-title-article-text7">Cutlery Selection.</h4>
+                    <p class="main-p4-title-article-paragraph">
+                      Duis tristique sed lorem a vestibulum. 
+                    </p>
+                  </div>
+                </article>
+                
+                <!--8-->
+                <article class="article-4-8">
+                  <img src="./images/Take-away-Options.png" alt="Take-away-Options" class="main-p4-content-p2-img8 fl">
+                  <div class="main-p4-title-article-border8">
+                    <h4 class="main-p4-title-article-text8">Take-away Options.</h4>
+                    <p class="main-p4-title-article-paragraph">
+                      Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section> <!--Main-page-p.5-review-->
-      <div> <!--Зробити сірий фон з допомогою CSS-->
-        </div> <!--Фон на всю ширину та весь контейнер, а сам текст - ні, тому загорнула в div-->
-        <img src="./images/Line.png" alt="Line">
-
-        <h3>Past guests.</h3>
-        <p>Don't take our word for it! Have a look at what our previous guests say 
-        about their stay at the Guest House.</p>
+      <section> <!--Main-p.5-Rew - SLICK-slider-->
+        <div class="main-p5">
+          <div class="main-p5-content"> 
+            <div class="main-p5-content-p1">
+              <img src="./images/Line.png" alt="Line" class="red-line-main-p5">
+              <div class="main-p5-title-border">
+                <h3 class="main-p5-third-title-texte">Past guests.</h3>
+              </div>
+              <div class="main-p5-paragraph-border">
+                <p class="main-p5-paragraph-text">
+                  Don't take our word for it! Have a look at what our previous guests say about their stay at the Guest House.
+                </p>
+              </div>
+            </div>
+            <div class="main-p5-content-p2">
+              <div class="main-slider">
+                <div>
+                  <article class="article-5-1"> 
+                    <div class="slider-star"> 
+                      <img src="./images/star-yes.png" alt="star-yes" class="img-star"> 
+                      <img src="./images/star-yes.png" alt="star-yes" class="img-star">
+                      <img src="./images/star-yes.png" alt="star-yes" class="img-star">
+                      <img src="./images/star-yes.png" alt="star-yes" class="img-star">
+                      <img src="./images/star-yes.png" alt="star-yes" class="img-star">
+                    </div>
+                    <div class="main-p5-title-article-border1">
+                      <h4 class="main-p5-title-article-text1">
+                        We had an amazing stay at the Guest House!
+                      </h4>
+                    </div>
+                    <div class="main-p5-paragraph-article-border1">
+                      <p class="main-p5-paragraph-article-text1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique.
+                        Duis cursus, mi quis viverra ornare, eros dolor interdum nulla,
+                        ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
+                        Nunc ut sem vitae risus tristique posuere.
+                      </p>
+                    </div>
+                    <p class="main-p5-paragraph2-article-text1">
+                      <img src="./images/line-vertical-ok.png" alt="line-vertical" class="slider-line">Nate Davidsson
+                    </p>
+                  </article>
+                </div>
       
-        <!--ВАЖЛИВО - в процесі стилізації звернути увагу, що сам відгук в білому котейнері, а блок сірий-->
-        <!--review 1--> 
-        <article>
-          <p>&#9733; &#9733; &#9733; &#9733;</p> <!--Приміила спец.символи, щоб спробувати-->
-          <h4>We had an amazing stay at the Guest House!</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Suspendisse varius enim in eros elementum tristique.
-            Duis cursus, mi quis viverra ornare, eros dolor interdum nulla,
-            ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
-            Nunc ut sem vitae risus tristique posuere.
-          </p>
-          <span>[</span> Nate Davidsson
-        </article>
+                <div>
+                  <article class="article-5-2">
+                    <div class="slider-star"> 
+                      <img src="./images/star-yes.png" alt="star-yes" class="img-star"> 
+                      <img src="./images/star-yes.png" alt="star-yes" class="img-star">
+                      <img src="./images/star-yes.png" alt="star-yes" class="img-star">
+                      <img src="./images/star-yes.png" alt="star-yes" class="img-star">
+                      <img src="./images/star-no.png" alt="star-no" class="img-star">  
+                    </div>
+                    <div class="main-p5-title-article-border2">
+                      <h4 class="main-p5-title-article-text2">
+                        Beautiful little hideaway.
+                      </h4>
+                    </div>
+                    <div class="main-p5-paragraph-article-border2">
+                      <p class="main-p5-paragraph-article-text2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Suspendisse varius enim in eros elementum tristique. 
+                        Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. 
+                        Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
+                      </p>
+                    </div>
+                    <p class="main-p5-paragraph2-article-text2">
+                      <img src="./images/line-vertical-ok.png" alt="line-vertical" class="slider-line">Laura Paulie
+                    </p>
+                    </article>
+                </div>
       
-        <!--review 2-->
-        <article>
-          <img src="../images/star-yes.png" alt="star-yes"> <!--Тут примінила картинки зірочок з макету-->
-          <img src="../images/star-yes.png" alt="star-yes">
-          <img src="../images/star-yes.png" alt="star-yes">
-          <img src="../images/star-yes.png" alt="star-yes">
-          <img src="../images/star-no.png" alt="star-no">
-          <h4>Beautiful little hideaway.</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Suspendisse varius enim in eros elementum tristique.
-            Duis cursus, mi quis viverra ornare, eros dolor interdum nulla,
-            ut commodo diam libero vitae erat.
-            Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
-          </p>
-          <span>[</span> Laura Paulie
-        </article>
+                <div>
+                  <article class="article-5-3">
+                    <div class="slider-star">
+                      <img src="./images/star-yes.png" alt="star-yes" class="img-star"> 
+                      <img src="./images/star-yes.png" alt="star-yes" class="img-star">
+                      <img src="./images/star-yes.png" alt="star-yes" class="img-star">
+                      <img src="./images/star-yes.png" alt="star-yes" class="img-star">
+                      <img src="./images/star-yes.png" alt="star-yes" class="img-star">
+                    </div>
+                    <div class="main-p5-title-article-border3">
+                      <h4 class="main-p5-title-article-text3">
+                        Best vacation ever!
+                      </h4>
+                    </div>
+                    <div class="main-p5-paragraph-article-border3">
+                      <p class="main-p5-paragraph-article-text3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Suspendisse varius enim in eros elementum tristique. 
+                        Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, 
+                        ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
+                      </p>
+                    </div>
+                    <p class="main-p5-paragraph2-article-text3">
+                      <img src="./images/line-vertical-ok.png" alt="line-vertical" class="slider-line"> Greg Todd
+                    </p> 
+                  </article>
+                </div>
       
-        <!--review 3-->
-        <article>
-          <img src="../images/star-yes.png" alt="star-yes"> <!--Тут примінила картинки зірочок з макету-->
-          <img src="../images/star-yes.png" alt="star-yes">
-          <img src="../images/star-yes.png" alt="star-yes">
-          <img src="../images/star-yes.png" alt="star-yes">
-          <img src="../images/star-yes.png" alt="star-yes">
-          <h4>Best vacation ever!</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Suspendisse varius enim in eros elementum tristique.
-          </p>
-          <span>[</span> Greg Todd
-        </article>
-    </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section> <!--Тут має бути блок Come together, ще в роботі-->
-      <div> 
-        <h3>??????????</h3>
-      </div>
-    </section>
+      <section> <!--Main-p.6-Come together-->
+        <div class="main-p6">
+          <div class="main-p6-1-container"></div> 
 
-    <section> <!--Тут має бути блок Резервувати, ще в роботі-->
-      <div>
-        <h3>??????????</h3>
-      </div>
-    </section>
+          <div class="main-p6-2-container"> <!--text-->
+            <div class="main-p6-2-content"> <!--На макеті контент контейнера знаходиться в блоці, тому виникає блок div--> 
+              <div class="main-p6-2-content-text fl">
+                <img src="./images/Line.png" alt="Line" class="red-line-main-p6">
+                <div class="main-p6-title-border">
+                  <h3 class="main-p6-third-title-texte">Come together.</h3>
+                </div>
+                <div class="main-p6-paragraph-border">
+                  <p class="main-p6-paragraph-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus.
+                  </p>
+                </div>
+              </div>
 
+              <div class="main-p6-2-content-article fr">
+                <div class="article-6-left fl">
+                  <article class="article-6-1"> <!--1-->
+                    <img src="./images/conditions-wi-fi.png" alt="wi-fi" class="main-p6-content-p2-img1 fl">
+                    <div class="main-p6-title-article-border1 fr">
+                      <h4 class="main-p6-title-article-text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                    </div>
+                  </article>
+        
+                  <article class="article-6-2"> <!--2-->
+                    <img src="./images/conditions-saving-things.png" alt="saving-things" class="main-p6-content-p2-img2 fl">
+                    <div class="main-p6-title-article-border2 fr">
+                      <h4 class="main-p6-title-article-text2">Nulla rhoncus feugiat eros quis consectetur.</h4>
+                    </div>
+                  </article>  
+                </div>
+
+                <div class="article-6-right fr">
+                  <article class="article-6-3"> <!--3-->
+                    <img src="./images/conditions-products.png" alt="conditions-products" class="main-p6-content-p2-img3 fl">
+                    <div class="main-p6-title-article-border3 fr">
+                      <h4 class="main-p6-title-article-text3">Nullam scelerisque aliquam odio et faucibus.</h4>
+                    </div>
+                  </article>
+        
+                  <article class="article-6-4"> <!--4-->
+                    <img src="./images/conditions-kitchen.png" alt="conditions-kitchen" class="main-p6-content-p2-img4 fl">
+                    <div class="main-p6-title-article-border4 fr">
+                      <h4 class="main-p6-title-article-text4">Morbi neque ex, condimentum.</h4>
+                    </div>
+                  </article>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section> <!--Main-p.7-booking-->
+        <div class="main-p7">
+          <div class="main-p7-content">
+            <div class="main-p7-content-text">
+              <img src="./images/Line.png" alt="Line" class="red-line-main-p7"> 
+              <div class="main-p7-title-border">
+                <h3 class="main-p7-third-title-texte">We're already booked up for the spring — hurry up & secure your stay for the summer.</h3>
+              </div>
+              <div class="main-p7-paragraph-border">
+                <p class="main-p7-paragraph-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus.
+                </p>
+              </div>
+            </div>
+            
+            <div class="main-p7-content-button">
+              <button class="main-p7-button-contact fl" title="Go to Contact" > 
+                Contact
+              </button>
+      
+              <button class="main-p7-button-book fl" title="Go to Book now" > 
+                Book now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 
   <!--FOOTER-->
-  <footer>
-    <!--Також ще в роботі-->
+  <footer> 
+    <div class="general-container"> <!--типовий контейнер для всіх глобальних частин сайту із шириною, центруванням...-->
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-content-p1">
+            <div class="pages"> <!--Pages-->
+              <h3 class="footer-pages-title">pages</h3> 
+              <nav class="footer-pages-menu">
+                <ul>
+                  <li><a href="./index.html" title="Go to Start">Start</a></li>
+                  <li><a href="./pages/contact.html" title="Go to Contact">Contact</a></li>
+                  <li><a href="./pages/our-history.html" title="Go to Our historyinstructions">Our history</a></li>
+                  <li><a href="./pages/licenses.html" title="Go to Licenses">Licenses</a></li>
+                  <li><a href="./pages/instructions.html" title="Go to instrutions">Instructions</a></li>
+                  <li><a href="./pages/style-guide.html" title="Go to Style guide">Style guide</a></li>
+                </ul>
+              </nav>
+            </div>
+          
+            <div class="social-media"> <!--Social Media-->
+                <h3 class="footer-social-media-title">Social Media</h3>
+                <nav >
+                  <ul class="footer-social-media-menu">
+                    <li>
+                      <a href="./index.html" class="social-media-a">
+                        <img src="./images/SocialMedia.png" alt="SocialMedia" class="footer-social-media-img">
+                      </a> 
+                    </li>
+                    <li>
+                      <a href="./index.html" class="social-media-a">
+                        <img src="./images/SocialMedia-fb.png" alt="SocialMedia-fb" class="footer-social-media-img">
+                      </a> 
+                    </li>
+                    <li>
+                      <a href="./index.html" class="social-media-a">
+                        <img src="./images/SocialMedia-insta.png" alt="SocialMedia-insta" class="footer-social-media-img">
+                      </a> 
+                    </li>
+                  </ul>
+                </nav>
+            </div>
+      
+            <div class="newsletter"> <!--Newsletter-->
+                  <div class="footer-form-title-border">
+                    <h4 class="footer-form-title">newsletter</h4> 
+                  </div>
+                  <div class="footer-form-title-paragraph-border">
+                    <p class="footer-form-title-paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                  </div>
+                  
+                  <nav class="navbar">
+                    <div class="container-fluid">
+                      <form class="d-flex footer-form" role="search">
+                        <input class="footer-input form-control me-2 " type="email" placeholder="Email" aria-label="Email">
+                        <button class="btn btn-outline-success footer-button" type="submit">Submit</button>
+                      </form>
+                    </div>
+                  </nav>
+
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+              <a href="./index.html"> 
+                <img src="./images/logo-for-footer.svg" alt="GuestHouse" class="footer-logo">
+              </a>
+              <p class="footer-bottom-paragraph">&#169; Guest House, LLC. All rights reserved. Powered by Webflow</p> 
+        
+              <div class="footer-bottom-menu">
+                <nav >
+                  <ul class="footer-bottom-nav">
+                    <li><a href="tel:+47(0)702881234">+47 (0) 702 88 12 34</a></li>
+                    <li><a href="mailto:example@webflow.io">&mdash; example@webflow.io</a></li>
+                    <li><p class="footer-bottom-menu-text"> Klubbvika 12, 8310 Kabelvag, Norway</p></li>
+                  </ul>
+                </nav>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
   </footer>
-  
+
+  <!--для Бутстрап-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
+    <!--ПІДКЛЮЧЕННЯ Карусельки - слайдера із сайту Slick-->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+
+  <!--ЗАПУСК - ВАЖЛИВО, це необіхдно заповнювати для КАРУСЕЛЬКИ із сайту SLICK!!!!!-->
+  <!--your-class - вводимо назву нашого класу для карусельки-->
+  <script> 
+    $(document).ready(function(){
+      $('.main-slider').slick({  
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+
+        responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 998,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 3
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 3
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 3
+          }
+        }
+      ]
+      });
+    });
+  </script>
+
 </body>
+
 </html>
